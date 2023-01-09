@@ -14,6 +14,14 @@
 		0937134629686FD700124E03 /* HeroListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0937134529686FD700124E03 /* HeroListTests.swift */; };
 		0937135029686FD700124E03 /* HeroListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0937134F29686FD700124E03 /* HeroListUITests.swift */; };
 		0937135229686FD700124E03 /* HeroListUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0937135129686FD700124E03 /* HeroListUITestsLaunchTests.swift */; };
+		09B7E4D5296CAFED0043A36F /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = 09B7E4D4296CAFED0043A36F /* RxBlocking */; };
+		09B7E4D7296CAFED0043A36F /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 09B7E4D6296CAFED0043A36F /* RxCocoa */; };
+		09B7E4D9296CAFED0043A36F /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 09B7E4D8296CAFED0043A36F /* RxRelay */; };
+		09B7E4DB296CAFED0043A36F /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 09B7E4DA296CAFED0043A36F /* RxSwift */; };
+		09B7E4DD296CAFED0043A36F /* RxTest in Frameworks */ = {isa = PBXBuildFile; productRef = 09B7E4DC296CAFED0043A36F /* RxTest */; };
+		09B7E4E0296CB03B0043A36F /* RxSwiftExt in Frameworks */ = {isa = PBXBuildFile; productRef = 09B7E4DF296CB03B0043A36F /* RxSwiftExt */; };
+		09B7E4E2296CB33B0043A36F /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B7E4E1296CB33B0043A36F /* ApiManager.swift */; };
+		09B7E4E6296CB94E0043A36F /* RuntimeError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B7E4E5296CB94E0043A36F /* RuntimeError.swift */; };
 		09E08A06296B1C67003DEC53 /* AppDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E08A05296B1C67003DEC53 /* AppDIContainer.swift */; };
 		09E08A08296B1CCD003DEC53 /* AppMainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E08A07296B1CCD003DEC53 /* AppMainCoordinator.swift */; };
 		09E08A0C296B1D58003DEC53 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E08A0B296B1D58003DEC53 /* Coordinator.swift */; };
@@ -21,7 +29,6 @@
 		09E08A15296B23B3003DEC53 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E08A14296B23B3003DEC53 /* Character.swift */; };
 		09E08A18296B2403003DEC53 /* CharacterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E08A17296B2403003DEC53 /* CharacterService.swift */; };
 		09E08A1A296B247F003DEC53 /* CharacterRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E08A19296B247F003DEC53 /* CharacterRepository.swift */; };
-		09E08A1C296B262F003DEC53 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E08A1B296B262F003DEC53 /* Endpoints.swift */; };
 		09E08A1F296B2663003DEC53 /* Character+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E08A1E296B2663003DEC53 /* Character+Mapping.swift */; };
 		09E08A21296B26B7003DEC53 /* CharacterList+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E08A20296B26B7003DEC53 /* CharacterList+Mapping.swift */; };
 		09E08A23296B2722003DEC53 /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E08A22296B2722003DEC53 /* AppConfiguration.swift */; };
@@ -67,6 +74,8 @@
 		0937134B29686FD700124E03 /* HeroListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeroListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0937134F29686FD700124E03 /* HeroListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroListUITests.swift; sourceTree = "<group>"; };
 		0937135129686FD700124E03 /* HeroListUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroListUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		09B7E4E1296CB33B0043A36F /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		09B7E4E5296CB94E0043A36F /* RuntimeError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuntimeError.swift; sourceTree = "<group>"; };
 		09E08A05296B1C67003DEC53 /* AppDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDIContainer.swift; path = ../../../../_Showcase/HeroList/HeroList/Application/AppDIContainer.swift; sourceTree = "<group>"; };
 		09E08A07296B1CCD003DEC53 /* AppMainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppMainCoordinator.swift; path = ../../../../_Showcase/HeroList/HeroList/Application/AppMainCoordinator.swift; sourceTree = "<group>"; };
 		09E08A0B296B1D58003DEC53 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Coordinator.swift; path = ../../../../../_Showcase/HeroList/HeroList/Presentation/Utils/Coordinator.swift; sourceTree = "<group>"; };
@@ -74,7 +83,6 @@
 		09E08A14296B23B3003DEC53 /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Character.swift; path = ../../../../_Showcase/HeroList/HeroList/Models/Character.swift; sourceTree = "<group>"; };
 		09E08A17296B2403003DEC53 /* CharacterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CharacterService.swift; path = ../../../../../_Showcase/HeroList/HeroList/Services/Interfaces/CharacterService.swift; sourceTree = "<group>"; };
 		09E08A19296B247F003DEC53 /* CharacterRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CharacterRepository.swift; path = ../../../../../_Showcase/HeroList/HeroList/Services/Repositories/CharacterRepository.swift; sourceTree = "<group>"; };
-		09E08A1B296B262F003DEC53 /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Endpoints.swift; path = ../../../../_Showcase/HeroList/HeroList/Network/Endpoints.swift; sourceTree = "<group>"; };
 		09E08A1E296B2663003DEC53 /* Character+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Character+Mapping.swift"; path = "../../../../../_Showcase/HeroList/HeroList/Network/Mapping/Character+Mapping.swift"; sourceTree = "<group>"; };
 		09E08A20296B26B7003DEC53 /* CharacterList+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "CharacterList+Mapping.swift"; path = "../../../../../_Showcase/HeroList/HeroList/Network/Mapping/CharacterList+Mapping.swift"; sourceTree = "<group>"; };
 		09E08A22296B2722003DEC53 /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppConfiguration.swift; path = ../../../../_Showcase/HeroList/HeroList/Application/AppConfiguration.swift; sourceTree = "<group>"; };
@@ -96,6 +104,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09B7E4DB296CAFED0043A36F /* RxSwift in Frameworks */,
+				09B7E4D9296CAFED0043A36F /* RxRelay in Frameworks */,
+				09B7E4E0296CB03B0043A36F /* RxSwiftExt in Frameworks */,
+				09B7E4D7296CAFED0043A36F /* RxCocoa in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +115,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09B7E4DD296CAFED0043A36F /* RxTest in Frameworks */,
+				09B7E4D5296CAFED0043A36F /* RxBlocking in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +180,14 @@
 			path = HeroListUITests;
 			sourceTree = "<group>";
 		};
+		09B7E4E4296CB9440043A36F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				09B7E4E5296CB94E0043A36F /* RuntimeError.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		09E089FE296B0E04003DEC53 /* Application */ = {
 			isa = PBXGroup;
 			children = (
@@ -190,6 +212,7 @@
 		09E08A01296B0E1F003DEC53 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				09B7E4E4296CB9440043A36F /* Utils */,
 				09E08A14296B23B3003DEC53 /* Character.swift */,
 				09E08A12296B23AE003DEC53 /* CharacterList.swift */,
 			);
@@ -200,7 +223,7 @@
 			isa = PBXGroup;
 			children = (
 				09E08A1D296B264C003DEC53 /* Mapping */,
-				09E08A1B296B262F003DEC53 /* Endpoints.swift */,
+				09B7E4E1296CB33B0043A36F /* ApiManager.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -315,6 +338,12 @@
 			dependencies = (
 			);
 			name = HeroList;
+			packageProductDependencies = (
+				09B7E4D6296CAFED0043A36F /* RxCocoa */,
+				09B7E4D8296CAFED0043A36F /* RxRelay */,
+				09B7E4DA296CAFED0043A36F /* RxSwift */,
+				09B7E4DF296CB03B0043A36F /* RxSwiftExt */,
+			);
 			productName = HeroList;
 			productReference = 0937132B29686FD600124E03 /* HeroList.app */;
 			productType = "com.apple.product-type.application";
@@ -333,6 +362,10 @@
 				0937134329686FD700124E03 /* PBXTargetDependency */,
 			);
 			name = HeroListTests;
+			packageProductDependencies = (
+				09B7E4D4296CAFED0043A36F /* RxBlocking */,
+				09B7E4DC296CAFED0043A36F /* RxTest */,
+			);
 			productName = HeroListTests;
 			productReference = 0937134129686FD700124E03 /* HeroListTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -387,6 +420,10 @@
 				Base,
 			);
 			mainGroup = 0937132229686FD600124E03;
+			packageReferences = (
+				09B7E4D3296CAFED0043A36F /* XCRemoteSwiftPackageReference "RxSwift" */,
+				09B7E4DE296CB03B0043A36F /* XCRemoteSwiftPackageReference "RxSwiftExt" */,
+			);
 			productRefGroup = 0937132C29686FD600124E03 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -438,11 +475,12 @@
 				09E08A21296B26B7003DEC53 /* CharacterList+Mapping.swift in Sources */,
 				09E08A23296B2722003DEC53 /* AppConfiguration.swift in Sources */,
 				09E08A2A296B2C22003DEC53 /* CharacterListCoordinator.swift in Sources */,
+				09B7E4E2296CB33B0043A36F /* ApiManager.swift in Sources */,
 				09E08A32296B2CEB003DEC53 /* CharacterListItemCellVM.swift in Sources */,
 				09E08A1F296B2663003DEC53 /* Character+Mapping.swift in Sources */,
+				09B7E4E6296CB94E0043A36F /* RuntimeError.swift in Sources */,
 				09E08A1A296B247F003DEC53 /* CharacterRepository.swift in Sources */,
 				09E08A08296B1CCD003DEC53 /* AppMainCoordinator.swift in Sources */,
-				09E08A1C296B262F003DEC53 /* Endpoints.swift in Sources */,
 				09E08A3C296B2D74003DEC53 /* CharacterDetailVC.swift in Sources */,
 				09E08A0C296B1D58003DEC53 /* Coordinator.swift in Sources */,
 				09E08A38296B2D5E003DEC53 /* CharacterDetailCoordinator.swift in Sources */,
@@ -790,6 +828,58 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		09B7E4D3296CAFED0043A36F /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+		09B7E4DE296CB03B0043A36F /* XCRemoteSwiftPackageReference "RxSwiftExt" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RxSwiftCommunity/RxSwiftExt.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		09B7E4D4296CAFED0043A36F /* RxBlocking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 09B7E4D3296CAFED0043A36F /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxBlocking;
+		};
+		09B7E4D6296CAFED0043A36F /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 09B7E4D3296CAFED0043A36F /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		09B7E4D8296CAFED0043A36F /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 09B7E4D3296CAFED0043A36F /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		09B7E4DA296CAFED0043A36F /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 09B7E4D3296CAFED0043A36F /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		09B7E4DC296CAFED0043A36F /* RxTest */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 09B7E4D3296CAFED0043A36F /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxTest;
+		};
+		09B7E4DF296CB03B0043A36F /* RxSwiftExt */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 09B7E4DE296CB03B0043A36F /* XCRemoteSwiftPackageReference "RxSwiftExt" */;
+			productName = RxSwiftExt;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0937132329686FD600124E03 /* Project object */;
 }
