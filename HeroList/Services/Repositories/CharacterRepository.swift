@@ -6,15 +6,20 @@
 //
 
 import Foundation
+import RxSwift
 
+//TODO: unify having protocol and implementation in one file or in separate
 final class CharacterRepository: CharacterService {
 
-    func characterList(page: Int, with result: @escaping (Result<CharacterList, Error>) -> Void) {
-        //TODO: implement
+    @Injected
+    var apiManager: ApiManager
+
+    func characterList() -> Observable<CharacterList> {
+        apiManager.characterList()
     }
 
-    func characterDetail(characterId: CharacterId, with result: @escaping (Result<Character, Error>) -> Void) {
-        //TODO: implement
+    func characterDetail(characterId: CharacterId) -> Observable<Character> {
+        apiManager.characterDetail(characterId: characterId)
     }
 
 }

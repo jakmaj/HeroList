@@ -9,17 +9,26 @@ import Foundation
 import RxSwift
 import RxSwiftExt
 
-final class ApiManager {
+protocol ApiManager {
+    func characterList() -> Observable<CharacterList>
+    func characterDetail(characterId: CharacterId) -> Observable<Character>
+}
 
-    //TODO: swinject
-    let configuration = AppConfiguration()
+final class ApiManagerImpl: ApiManager {
+
+    @Injected
+    var configuration: AppConfiguration
+
     let jsonDecoder = JSONDecoder()
 
+    //TODO: move the implementation to some other place?
     func characterList() -> Observable<CharacterList> {
         call(request: urlRequest(endpoint: "character"))
     }
 
-    //TODO: another method for detail
+    func characterDetail(characterId: CharacterId) -> Observable<Character> {
+        call(request: urlRequest(endpoint: "character/\(characterId)"))
+    }
 
     private func call<T: Decodable>(request: URLRequest) -> Observable<T> {
         return URLSession.shared.rx.data(request: request)

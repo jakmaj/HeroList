@@ -7,7 +7,12 @@
 
 import Foundation
 
-final class AppConfiguration {
+protocol AppConfiguration {
+    var apiKey: String { get }
+    var apiBaseURL: String { get }
+}
+
+final class AppConfigurationImpl: AppConfiguration {
     lazy var apiKey = Bundle.main.object(forInfoDictionaryKey: "ApiKey") as! String
     lazy var apiBaseURL = Bundle.main.object(forInfoDictionaryKey: "ApiBaseURL") as! String
 }

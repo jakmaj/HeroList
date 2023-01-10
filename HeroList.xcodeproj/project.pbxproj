@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0920ED44296E0AC800A6C9E8 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 0920ED43296E0AC800A6C9E8 /* Swinject */; };
 		0937132F29686FD600124E03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0937132E29686FD600124E03 /* AppDelegate.swift */; };
 		0937133129686FD600124E03 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0937133029686FD600124E03 /* SceneDelegate.swift */; };
 		0937133829686FD700124E03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0937133729686FD700124E03 /* Assets.xcassets */; };
@@ -105,6 +106,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				09B7E4DB296CAFED0043A36F /* RxSwift in Frameworks */,
+				0920ED44296E0AC800A6C9E8 /* Swinject in Frameworks */,
 				09B7E4D9296CAFED0043A36F /* RxRelay in Frameworks */,
 				09B7E4E0296CB03B0043A36F /* RxSwiftExt in Frameworks */,
 				09B7E4D7296CAFED0043A36F /* RxCocoa in Frameworks */,
@@ -343,6 +345,7 @@
 				09B7E4D8296CAFED0043A36F /* RxRelay */,
 				09B7E4DA296CAFED0043A36F /* RxSwift */,
 				09B7E4DF296CB03B0043A36F /* RxSwiftExt */,
+				0920ED43296E0AC800A6C9E8 /* Swinject */,
 			);
 			productName = HeroList;
 			productReference = 0937132B29686FD600124E03 /* HeroList.app */;
@@ -423,6 +426,7 @@
 			packageReferences = (
 				09B7E4D3296CAFED0043A36F /* XCRemoteSwiftPackageReference "RxSwift" */,
 				09B7E4DE296CB03B0043A36F /* XCRemoteSwiftPackageReference "RxSwiftExt" */,
+				0920ED42296E0AC800A6C9E8 /* XCRemoteSwiftPackageReference "Swinject" */,
 			);
 			productRefGroup = 0937132C29686FD600124E03 /* Products */;
 			projectDirPath = "";
@@ -830,6 +834,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		0920ED42296E0AC800A6C9E8 /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 		09B7E4D3296CAFED0043A36F /* XCRemoteSwiftPackageReference "RxSwift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
@@ -849,6 +861,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		0920ED43296E0AC800A6C9E8 /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0920ED42296E0AC800A6C9E8 /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
 		09B7E4D4296CAFED0043A36F /* RxBlocking */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 09B7E4D3296CAFED0043A36F /* XCRemoteSwiftPackageReference "RxSwift" */;

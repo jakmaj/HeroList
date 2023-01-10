@@ -6,10 +6,11 @@
 //
 
 import Foundation
+import RxSwift
 
 protocol CharacterService {
 
-    func characterList(page: Int, with result: @escaping (Result<CharacterList, Error>) -> Void)
-    func characterDetail(characterId: CharacterId, with result: @escaping (Result<Character, Error>) -> Void)
+    func characterList() -> Observable<CharacterList>
+    func characterDetail(characterId: CharacterId) -> Observable<Character>
 
 }
