@@ -8,7 +8,7 @@
 import Foundation
 import RxSwift
 
-//TODO: unify having protocol and implementation in one file or in separate
+// TODO: unify having protocol and implementation in one file or in separate
 final class CharacterRepository: CharacterService {
 
     @Injected

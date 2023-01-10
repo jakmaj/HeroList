@@ -10,7 +10,7 @@ import Foundation
 typealias CharacterId = Int
 
 struct Character {
-    //TODO: proper properties
+    // TODO: proper properties
     let id: CharacterId
     let name: String
 }

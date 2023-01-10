@@ -8,7 +8,7 @@
 import Foundation
 import Swinject
 
-//TODO: figure out better solution for testability
+// TODO: figure out better solution for testability
 
 final class AppDIContainer {
 
@@ -17,7 +17,7 @@ final class AppDIContainer {
     static func setupRegistrations() {
         container.register(AppConfiguration.self, factory: { _ in AppConfigurationImpl() })
         container.register(ApiManager.self, factory: { _ in ApiManagerImpl() })
-        container.register(CharacterService.self, factory: { _ in CharacterRepository() } )
+        container.register(CharacterService.self, factory: { _ in CharacterRepository() })
     }
 
     static func get<T>() -> T? {
@@ -31,7 +31,7 @@ struct Injected<T> {
 
     var dependency: T
 
-    init(){
+    init() {
         self.dependency = AppDIContainer.get()!
     }
 

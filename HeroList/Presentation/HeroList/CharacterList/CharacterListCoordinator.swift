@@ -20,10 +20,10 @@ class CharacterListCoordinator: Coordinator {
     }
 
     func start() {
-        let vm = CharacterListVM(delegate: self)
-        let vc = CharacterListVC.instantiate(with: viewModel)
+        let viewModel = CharacterListVM(delegate: self)
+        let viewController = CharacterListVC.instantiate(with: viewModel)
 
-        navigationController.pushViewController(vc, animated: false)
-        characterListVC = vc
+        navigationController.pushViewController(viewController, animated: false)
+        characterListVC = viewController
     }
 }

@@ -8,7 +8,7 @@
 import Foundation
 
 struct CharacterList {
-    //TODO: proper properties
+    // TODO: proper properties
     let page: Int
     let totalPages: Int
     let characters: [Character]

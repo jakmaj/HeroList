@@ -21,7 +21,7 @@ final class ApiManagerImpl: ApiManager {
 
     let jsonDecoder = JSONDecoder()
 
-    //TODO: move the implementation to some other place?
+    // TODO: move the implementation to some other place?
     func characterList() -> Observable<CharacterList> {
         call(request: urlRequest(endpoint: "character"))
     }
