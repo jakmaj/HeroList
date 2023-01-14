@@ -16,7 +16,7 @@ struct CharacterList {
 struct CharacterListItem {
     let id: CharacterId
     let name: String
-    let realName: String
+    let realName: String?
     let publisherName: String
     let imageURL: URL?
 }

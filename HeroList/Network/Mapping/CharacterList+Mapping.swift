@@ -47,7 +47,7 @@ extension CharacterListItem: Decodable {
 
         id = try container.decode(Int.self, forKey: .id)
         name = try container.decode(String.self, forKey: .name)
-        realName = try container.decode(String.self, forKey: .realName)
+        realName = try? container.decode(String.self, forKey: .realName)
 
         let publisherContainer = try container.nestedContainer(keyedBy: PublisherKeys.self, forKey: .publisher)
         publisherName = try publisherContainer.decode(String.self, forKey: .name)

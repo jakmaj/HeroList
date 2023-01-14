@@ -23,7 +23,7 @@ final class ApiManagerImpl: ApiManager {
 
     // TODO: move the implementation to some other place?
     func characterList() -> Observable<CharacterList> {
-        call(request: urlRequest(endpoint: "character"))
+        call(request: urlRequest(endpoint: "characters"))
     }
 
     func characterDetail(characterId: CharacterId) -> Observable<Character> {
@@ -42,7 +42,10 @@ final class ApiManagerImpl: ApiManager {
     private func urlRequest(endpoint: String) -> URLRequest {
         guard var url = URL(string: configuration.apiBaseURL) else { fatalError("Error creating base api URL") }
         url.append(path: endpoint)
-        url.append(queryItems: [.init(name: "api_key", value: configuration.apiKey)])
+        url.append(queryItems: [
+            .init(name: "api_key", value: configuration.apiKey),
+            .init(name: "format", value: "json")
+        ])
 
         return URLRequest(url: url)
     }

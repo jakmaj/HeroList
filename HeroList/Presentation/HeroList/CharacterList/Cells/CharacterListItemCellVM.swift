@@ -22,7 +22,7 @@ final class CharacterListItemCellVM: ReusableViewModel {
 extension Outputs where Base == CharacterListItemCellVM {
 
     var name: String { vm.character.name }
-    var realName: String { vm.character.realName }
+    var realName: String? { vm.character.realName }
     var publisherName: String { vm.character.publisherName }
     var imageUrl: URL? { vm.character.imageURL }
 

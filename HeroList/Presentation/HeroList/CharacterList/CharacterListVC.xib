@@ -10,6 +10,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CharacterListVC" customModule="HeroList" customModuleProvider="target">
             <connections>
+                <outlet property="errorButton" destination="PU5-Pe-tJE" id="GJX-V8-vGw"/>
+                <outlet property="errorLabel" destination="FKB-eD-GJk" id="eBg-Ng-ooE"/>
+                <outlet property="errorView" destination="ijC-re-bGp" id="bSc-M9-q80"/>
+                <outlet property="loadingIndicator" destination="4FJ-FB-JLl" id="zkB-gA-J86"/>
                 <outlet property="tableView" destination="J0U-E5-THo" id="jZx-SU-DAa"/>
                 <outlet property="view" destination="iN0-l3-epB" id="QCJ-QY-xA7"/>
             </connections>
@@ -26,13 +30,46 @@
                             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         </tableView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ijC-re-bGp" userLabel="Error View">
+                            <rect key="frame" x="0.0" y="380.33333333333331" width="393" height="91.333333333333314"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FKB-eD-GJk">
+                                    <rect key="frame" x="176" y="7.9999999999999982" width="41.333333333333343" height="20.333333333333329"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PU5-Pe-tJE">
+                                    <rect key="frame" x="159" y="48.333333333333371" width="75" height="35"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="PU5-Pe-tJE" firstAttribute="centerX" secondItem="ijC-re-bGp" secondAttribute="centerX" id="49z-vd-EYz"/>
+                                <constraint firstItem="FKB-eD-GJk" firstAttribute="top" secondItem="ijC-re-bGp" secondAttribute="top" constant="8" id="9CJ-J3-KsY"/>
+                                <constraint firstItem="PU5-Pe-tJE" firstAttribute="top" secondItem="FKB-eD-GJk" secondAttribute="bottom" constant="20" id="YHN-uf-XjA"/>
+                                <constraint firstAttribute="bottom" secondItem="PU5-Pe-tJE" secondAttribute="bottom" constant="8" id="hrw-4t-ufj"/>
+                                <constraint firstItem="FKB-eD-GJk" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ijC-re-bGp" secondAttribute="leading" constant="8" id="i6Q-nZ-2k8"/>
+                                <constraint firstItem="FKB-eD-GJk" firstAttribute="centerX" secondItem="ijC-re-bGp" secondAttribute="centerX" id="pMw-61-vSC"/>
+                            </constraints>
+                        </view>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="4FJ-FB-JLl">
+                            <rect key="frame" x="178" y="407.66666666666669" width="37" height="37"/>
+                        </activityIndicatorView>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
                         <constraint firstItem="J0U-E5-THo" firstAttribute="leading" secondItem="JmQ-Sa-T1Y" secondAttribute="leading" id="BTg-MV-qFF"/>
                         <constraint firstAttribute="bottom" secondItem="J0U-E5-THo" secondAttribute="bottom" id="Hzy-Wf-UJp"/>
                         <constraint firstItem="J0U-E5-THo" firstAttribute="top" secondItem="JmQ-Sa-T1Y" secondAttribute="top" id="Rs0-bK-Ldu"/>
+                        <constraint firstItem="ijC-re-bGp" firstAttribute="leading" secondItem="JmQ-Sa-T1Y" secondAttribute="leading" id="TpM-LR-01j"/>
+                        <constraint firstItem="4FJ-FB-JLl" firstAttribute="centerY" secondItem="JmQ-Sa-T1Y" secondAttribute="centerY" id="YfG-4u-ZL5"/>
                         <constraint firstAttribute="trailing" secondItem="J0U-E5-THo" secondAttribute="trailing" id="bGk-xd-bqu"/>
+                        <constraint firstAttribute="trailing" secondItem="ijC-re-bGp" secondAttribute="trailing" id="eQ6-rX-FHl"/>
+                        <constraint firstItem="4FJ-FB-JLl" firstAttribute="centerX" secondItem="JmQ-Sa-T1Y" secondAttribute="centerX" id="mq4-r2-1bN"/>
+                        <constraint firstItem="ijC-re-bGp" firstAttribute="centerY" secondItem="JmQ-Sa-T1Y" secondAttribute="centerY" id="ri2-zJ-Ja1"/>
                     </constraints>
                 </view>
             </subviews>

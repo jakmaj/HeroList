@@ -12,19 +12,63 @@ final class CharacterListVC: ViewController<CharacterListVM> {
 
     @IBOutlet private var tableView: UITableView!
 
+    @IBOutlet private var errorView: UIView!
+    @IBOutlet private var errorLabel: UILabel!
+    @IBOutlet private var errorButton: UIButton!
+
+    @IBOutlet private var loadingIndicator: UIActivityIndicatorView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupUI()
+
+        title = "Hero List"
+
+        setupTable()
+        setupErrorView()
         setupRx()
+
+        vm.in.viewDidLoad()
     }
 
-    private func setupUI() {
+    private func setupTable() {
         tableView.registerCell(CharacterListItemCell.self)
         tableView.delegate = self
         tableView.dataSource = self
     }
 
+    private func setupErrorView() {
+        errorLabel.text = "Unable to get list of heroes, please check connection and retry."
+        errorButton.setTitle("Retry", for: .normal)
+    }
+
     private func setupRx() {
+        vm.out.rx.reloadTable
+            .do(onNext: { [weak self] in
+                self?.tableView.reloadData()
+            })
+            .subscribe()
+            .disposed(by: disposeBag)
+
+        vm.out.rx.state
+            .distinctUntilChanged()
+            .do(onNext: { [weak self] state in
+                self?.updateForState(state)
+            })
+            .subscribe()
+            .disposed(by: disposeBag)
+
+        errorButton.rx.tap
+            .do(onNext: { [weak self] in
+                self?.vm.in.reloadData()
+            })
+            .subscribe()
+            .disposed(by: disposeBag)
+    }
+
+    private func updateForState(_ state: CharacterListVMState) {
+        errorView.isHidden = state != .error
+        loadingIndicator.isHidden = state != .loading
+        tableView.isHidden = state != .normal
     }
 
 }
