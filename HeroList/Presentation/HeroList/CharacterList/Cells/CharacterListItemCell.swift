@@ -27,6 +27,7 @@ final class CharacterListItemCell: TableCell<CharacterListItemCellVM> {
 
         nameLabel.text = vm.out.name
         realNameLabel.text = vm.out.realName
+        realNameLabel.isHidden = vm.out.realName == nil
         publisherNameLabel.text = vm.out.publisherName
         avatarImageView.kf.setImage(
             with: vm.out.imageUrl,

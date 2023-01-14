@@ -34,6 +34,8 @@ final class CharacterListVC: ViewController<CharacterListVM> {
         tableView.registerCell(CharacterListItemCell.self)
         tableView.delegate = self
         tableView.dataSource = self
+
+        tableView.tableHeaderView = UIView() // to remove first cell top separator
     }
 
     private func setupErrorView() {
