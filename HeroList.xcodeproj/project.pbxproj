@@ -15,6 +15,8 @@
 		0937134629686FD700124E03 /* HeroListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0937134529686FD700124E03 /* HeroListTests.swift */; };
 		0937135029686FD700124E03 /* HeroListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0937134F29686FD700124E03 /* HeroListUITests.swift */; };
 		0937135229686FD700124E03 /* HeroListUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0937135129686FD700124E03 /* HeroListUITestsLaunchTests.swift */; };
+		09A69EA2296F646600A9E2FE /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A69EA1296F646600A9E2FE /* ViewModel.swift */; };
+		09A69EA4296F6BBC00A9E2FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A69EA3296F6BBC00A9E2FE /* ViewController.swift */; };
 		09B7E4D5296CAFED0043A36F /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = 09B7E4D4296CAFED0043A36F /* RxBlocking */; };
 		09B7E4D7296CAFED0043A36F /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 09B7E4D6296CAFED0043A36F /* RxCocoa */; };
 		09B7E4D9296CAFED0043A36F /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 09B7E4D8296CAFED0043A36F /* RxRelay */; };
@@ -23,6 +25,11 @@
 		09B7E4E0296CB03B0043A36F /* RxSwiftExt in Frameworks */ = {isa = PBXBuildFile; productRef = 09B7E4DF296CB03B0043A36F /* RxSwiftExt */; };
 		09B7E4E2296CB33B0043A36F /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B7E4E1296CB33B0043A36F /* ApiManager.swift */; };
 		09B7E4E6296CB94E0043A36F /* RuntimeError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B7E4E5296CB94E0043A36F /* RuntimeError.swift */; };
+		09CF027E2972BC5600A60925 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 09CF027D2972BC5600A60925 /* Kingfisher */; };
+		09CF02802972C3F800A60925 /* TableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09CF027F2972C3F800A60925 /* TableCell.swift */; };
+		09CF02822972C42700A60925 /* ConfigurableReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09CF02812972C42700A60925 /* ConfigurableReusableView.swift */; };
+		09CF02852972E12F00A60925 /* UITableView+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09CF02842972E12F00A60925 /* UITableView+Convenience.swift */; };
+		09CF02872972E44C00A60925 /* Collection+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09CF02862972E44C00A60925 /* Collection+Convenience.swift */; };
 		09E08A06296B1C67003DEC53 /* AppDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E08A05296B1C67003DEC53 /* AppDIContainer.swift */; };
 		09E08A08296B1CCD003DEC53 /* AppMainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E08A07296B1CCD003DEC53 /* AppMainCoordinator.swift */; };
 		09E08A0C296B1D58003DEC53 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E08A0B296B1D58003DEC53 /* Coordinator.swift */; };
@@ -75,8 +82,14 @@
 		0937134B29686FD700124E03 /* HeroListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeroListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0937134F29686FD700124E03 /* HeroListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroListUITests.swift; sourceTree = "<group>"; };
 		0937135129686FD700124E03 /* HeroListUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroListUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		09A69EA1296F646600A9E2FE /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		09A69EA3296F6BBC00A9E2FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		09B7E4E1296CB33B0043A36F /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
 		09B7E4E5296CB94E0043A36F /* RuntimeError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuntimeError.swift; sourceTree = "<group>"; };
+		09CF027F2972C3F800A60925 /* TableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCell.swift; sourceTree = "<group>"; };
+		09CF02812972C42700A60925 /* ConfigurableReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurableReusableView.swift; sourceTree = "<group>"; };
+		09CF02842972E12F00A60925 /* UITableView+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Convenience.swift"; sourceTree = "<group>"; };
+		09CF02862972E44C00A60925 /* Collection+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Convenience.swift"; sourceTree = "<group>"; };
 		09E08A05296B1C67003DEC53 /* AppDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDIContainer.swift; path = ../../../../_Showcase/HeroList/HeroList/Application/AppDIContainer.swift; sourceTree = "<group>"; };
 		09E08A07296B1CCD003DEC53 /* AppMainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppMainCoordinator.swift; path = ../../../../_Showcase/HeroList/HeroList/Application/AppMainCoordinator.swift; sourceTree = "<group>"; };
 		09E08A0B296B1D58003DEC53 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Coordinator.swift; path = ../../../../../_Showcase/HeroList/HeroList/Presentation/Utils/Coordinator.swift; sourceTree = "<group>"; };
@@ -105,6 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09CF027E2972BC5600A60925 /* Kingfisher in Frameworks */,
 				09B7E4DB296CAFED0043A36F /* RxSwift in Frameworks */,
 				0920ED44296E0AC800A6C9E8 /* Swinject in Frameworks */,
 				09B7E4D9296CAFED0043A36F /* RxRelay in Frameworks */,
@@ -190,6 +204,15 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		09CF02832972E0D800A60925 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				09CF02842972E12F00A60925 /* UITableView+Convenience.swift */,
+				09CF02862972E44C00A60925 /* Collection+Convenience.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		09E089FE296B0E04003DEC53 /* Application */ = {
 			isa = PBXGroup;
 			children = (
@@ -235,6 +258,7 @@
 			children = (
 				09E08A09296B1D3D003DEC53 /* HeroList */,
 				09E08A0A296B1D47003DEC53 /* Utils */,
+				09CF02832972E0D800A60925 /* Extensions */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -262,6 +286,10 @@
 			isa = PBXGroup;
 			children = (
 				09E08A0B296B1D58003DEC53 /* Coordinator.swift */,
+				09A69EA1296F646600A9E2FE /* ViewModel.swift */,
+				09A69EA3296F6BBC00A9E2FE /* ViewController.swift */,
+				09CF027F2972C3F800A60925 /* TableCell.swift */,
+				09CF02812972C42700A60925 /* ConfigurableReusableView.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -296,9 +324,9 @@
 			children = (
 				09E08A28296B2BDD003DEC53 /* Cells */,
 				09E08A29296B2C22003DEC53 /* CharacterListCoordinator.swift */,
-				09E08A2B296B2C77003DEC53 /* CharacterListVM.swift */,
-				09E08A2F296B2CA4003DEC53 /* CharacterListVC.swift */,
 				09E08A2D296B2C95003DEC53 /* CharacterListVC.xib */,
+				09E08A2F296B2CA4003DEC53 /* CharacterListVC.swift */,
+				09E08A2B296B2C77003DEC53 /* CharacterListVM.swift */,
 			);
 			path = CharacterList;
 			sourceTree = "<group>";
@@ -347,6 +375,7 @@
 				09B7E4DA296CAFED0043A36F /* RxSwift */,
 				09B7E4DF296CB03B0043A36F /* RxSwiftExt */,
 				0920ED43296E0AC800A6C9E8 /* Swinject */,
+				09CF027D2972BC5600A60925 /* Kingfisher */,
 			);
 			productName = HeroList;
 			productReference = 0937132B29686FD600124E03 /* HeroList.app */;
@@ -428,6 +457,7 @@
 				09B7E4D3296CAFED0043A36F /* XCRemoteSwiftPackageReference "RxSwift" */,
 				09B7E4DE296CB03B0043A36F /* XCRemoteSwiftPackageReference "RxSwiftExt" */,
 				0920ED42296E0AC800A6C9E8 /* XCRemoteSwiftPackageReference "Swinject" */,
+				09CF027C2972BC5600A60925 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 0937132C29686FD600124E03 /* Products */;
 			projectDirPath = "";
@@ -496,11 +526,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09CF02852972E12F00A60925 /* UITableView+Convenience.swift in Sources */,
 				09E08A15296B23B3003DEC53 /* Character.swift in Sources */,
 				09E08A3A296B2D6A003DEC53 /* CharacterDetailVM.swift in Sources */,
 				0937132F29686FD600124E03 /* AppDelegate.swift in Sources */,
 				09E08A21296B26B7003DEC53 /* CharacterList+Mapping.swift in Sources */,
 				09E08A23296B2722003DEC53 /* AppConfiguration.swift in Sources */,
+				09A69EA2296F646600A9E2FE /* ViewModel.swift in Sources */,
+				09A69EA4296F6BBC00A9E2FE /* ViewController.swift in Sources */,
 				09E08A2A296B2C22003DEC53 /* CharacterListCoordinator.swift in Sources */,
 				09B7E4E2296CB33B0043A36F /* ApiManager.swift in Sources */,
 				09E08A32296B2CEB003DEC53 /* CharacterListItemCellVM.swift in Sources */,
@@ -509,11 +542,14 @@
 				09E08A1A296B247F003DEC53 /* CharacterRepository.swift in Sources */,
 				09E08A08296B1CCD003DEC53 /* AppMainCoordinator.swift in Sources */,
 				09E08A3C296B2D74003DEC53 /* CharacterDetailVC.swift in Sources */,
+				09CF02802972C3F800A60925 /* TableCell.swift in Sources */,
 				09E08A0C296B1D58003DEC53 /* Coordinator.swift in Sources */,
 				09E08A38296B2D5E003DEC53 /* CharacterDetailCoordinator.swift in Sources */,
+				09CF02822972C42700A60925 /* ConfigurableReusableView.swift in Sources */,
 				0937133129686FD600124E03 /* SceneDelegate.swift in Sources */,
 				09E08A06296B1C67003DEC53 /* AppDIContainer.swift in Sources */,
 				09E08A30296B2CA4003DEC53 /* CharacterListVC.swift in Sources */,
+				09CF02872972E44C00A60925 /* Collection+Convenience.swift in Sources */,
 				09E08A34296B2D26003DEC53 /* CharacterListItemCell.swift in Sources */,
 				09E08A13296B23AE003DEC53 /* CharacterList.swift in Sources */,
 				09E08A2C296B2C77003DEC53 /* CharacterListVM.swift in Sources */,
@@ -690,10 +726,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 23HVUS5J88;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = HeroList/Info.plist;
+				INFOPLIST_FILE = HeroList/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -720,10 +755,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 23HVUS5J88;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = HeroList/Info.plist;
+				INFOPLIST_FILE = HeroList/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -881,6 +915,14 @@
 				minimumVersion = 6.0.0;
 			};
 		};
+		09CF027C2972BC5600A60925 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -918,6 +960,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 09B7E4DE296CB03B0043A36F /* XCRemoteSwiftPackageReference "RxSwiftExt" */;
 			productName = RxSwiftExt;
+		};
+		09CF027D2972BC5600A60925 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 09CF027C2972BC5600A60925 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

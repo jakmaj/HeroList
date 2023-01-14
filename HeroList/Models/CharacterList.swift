@@ -8,8 +8,15 @@
 import Foundation
 
 struct CharacterList {
-    // TODO: proper properties
-    let page: Int
-    let totalPages: Int
-    let characters: [Character]
+    let status: Int
+    let error: String
+    let characters: [CharacterListItem]
+}
+
+struct CharacterListItem {
+    let id: CharacterId
+    let name: String
+    let realName: String
+    let publisherName: String
+    let imageURL: URL?
 }

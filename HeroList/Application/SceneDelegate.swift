@@ -11,7 +11,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
 
-    private let appDIContainer = AppDIContainer()
     private var mainCoordinator: AppMainCoordinator?
 
     func scene(
@@ -26,11 +25,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // (see `application:configurationForConnectingSceneSession` instead).
         guard let windowScene = scene as? UIWindowScene else { return }
 
+        AppDIContainer.setupRegistrations()
+
         window = UIWindow(windowScene: windowScene)
 
         let navigationController = UINavigationController()
         window?.rootViewController = navigationController
-        mainCoordinator = AppMainCoordinator(navigationController: navigationController, appDIContainer: appDIContainer)
+        mainCoordinator = AppMainCoordinator(navigationController: navigationController)
         mainCoordinator?.start()
         window?.makeKeyAndVisible()
     }

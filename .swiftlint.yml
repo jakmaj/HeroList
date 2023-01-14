@@ -1,0 +1,6 @@
+identifier_name:
+  excluded:
+    - vm
+    - vc
+    - id
+    - in

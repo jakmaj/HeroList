@@ -20,10 +20,18 @@ class CharacterListCoordinator: Coordinator {
     }
 
     func start() {
-        let viewModel = CharacterListVM(delegate: self)
-        let viewController = CharacterListVC.instantiate(with: viewModel)
+        let vm = CharacterListVM(delegate: self)
+        let vc = CharacterListVC(vm: vm, nibName: nil)
 
-        navigationController.pushViewController(viewController, animated: false)
-        characterListVC = viewController
+        navigationController.pushViewController(vc, animated: false)
+        characterListVC = vc
     }
+}
+
+extension CharacterListCoordinator: CharacterListVMDelegate {
+
+    func showCharacterDetail(characterId: CharacterId) {
+        // TODO: implement routing
+    }
+
 }

@@ -13,11 +13,9 @@ final class AppMainCoordinator: Coordinator {
     var children: [Coordinator] = []
 
     private let navigationController: UINavigationController
-    private let appDIContainer: AppDIContainer
 
-    init(navigationController: UINavigationController, appDIContainer: AppDIContainer) {
+    init(navigationController: UINavigationController) {
         self.navigationController = navigationController
-        self.appDIContainer = appDIContainer
     }
 
     func start() {
