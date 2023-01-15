@@ -14,7 +14,7 @@ struct Character {
     let name: String
     let realName: String?
     let publisherName: String
-    let deck: String
-    let description: String
+    let deck: String?
+    let description: String?
     let imageURL: URL?
 }

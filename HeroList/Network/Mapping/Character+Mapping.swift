@@ -46,8 +46,8 @@ extension Character: Decodable {
         id = try characterContainer.decode(Int.self, forKey: .id)
         name = try characterContainer.decode(String.self, forKey: .name)
         realName = try? characterContainer.decode(String.self, forKey: .realName)
-        deck = try characterContainer.decode(String.self, forKey: .deck)
-        description = Self.stripLinkTags(text: try characterContainer.decode(String.self, forKey: .description))
+        deck = try? characterContainer.decode(String.self, forKey: .deck)
+        description = Self.stripLinkTags(text: try? characterContainer.decode(String.self, forKey: .description))
 
         let publisherContainer = try characterContainer.nestedContainer(keyedBy: PublisherKeys.self, forKey: .publisher)
         publisherName = try publisherContainer.decode(String.self, forKey: .name)
@@ -56,8 +56,8 @@ extension Character: Decodable {
         imageURL = URL(string: try imageContainer.decode(String.self, forKey: .screenUrl))
     }
 
-    fileprivate static func stripLinkTags(text: String) -> String {
-        text.replacingOccurrences(
+    fileprivate static func stripLinkTags(text: String?) -> String? {
+        text?.replacingOccurrences(
             of: "<(a|\\\\/a)[^>]*>",
             with: "",
             options: .regularExpression,
