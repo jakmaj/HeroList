@@ -8,30 +8,32 @@
 import Foundation
 import UIKit
 
-class CharacterListCoordinator: Coordinator {
+final class CharacterListCoordinator: Coordinator {
 
     var children: [Coordinator] = []
+    weak var parentCoordinator: Coordinator?
+
     var navigationController: UINavigationController
 
-    private weak var characterListVC: CharacterListVC?
-
-    init(navigationController: UINavigationController) {
+    init(parentCoordinator: Coordinator, navigationController: UINavigationController) {
+        self.parentCoordinator = parentCoordinator
         self.navigationController = navigationController
     }
 
     func start() {
-        let vm = CharacterListVM(delegate: self)
-        let vc = CharacterListVC(vm: vm, nibName: nil)
+        let vm = CharacterListVM(coordinator: self)
+        let vc = CharacterListVC()
+        vc.vm = vm
 
         navigationController.pushViewController(vc, animated: false)
-        characterListVC = vc
     }
 }
 
-extension CharacterListCoordinator: CharacterListVMDelegate {
+extension CharacterListCoordinator: CharacterListVMCoordinator {
 
     func showCharacterDetail(characterId: CharacterId, initialName: String) {
         let coordinator = CharacterDetailCoordinator(
+            parentCoordinator: self,
             navigationController: navigationController,
             characterId: characterId,
             initialName: initialName

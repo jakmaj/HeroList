@@ -8,7 +8,7 @@
 import Foundation
 import RxSwift
 
-protocol CharacterListVMDelegate: AnyObject {
+protocol CharacterListVMCoordinator: Coordinator {
     func showCharacterDetail(characterId: CharacterId, initialName: String)
 }
 
@@ -21,16 +21,13 @@ final class CharacterListVM: ViewModel {
     @Injected
     var characterService: CharacterService
 
-    fileprivate weak var delegate: CharacterListVMDelegate?
-
     fileprivate let stateSubject = PublishSubject<State>()
     fileprivate let reloadTableSubject = PublishSubject<Void>()
 
     fileprivate var cellVMs: [ReusableViewModel] = []
 
-    init(delegate: CharacterListVMDelegate) {
-        self.delegate = delegate
-        super.init()
+    init(coordinator: CharacterListVMCoordinator) {
+        super.init(coordinator: coordinator)
     }
 
     fileprivate func loadData() {
@@ -61,7 +58,8 @@ extension Inputs where Base == CharacterListVM {
     func viewDidLoad() { vm.loadData() }
     func reloadData() { vm.loadData() }
     func routeToDetail(characterId: CharacterId, initialName: String) {
-        vm.delegate?.showCharacterDetail(characterId: characterId, initialName: initialName)
+        let coordinator = vm.coordinator as? CharacterListVMCoordinator
+        coordinator?.showCharacterDetail(characterId: characterId, initialName: initialName)
     }
 
 }

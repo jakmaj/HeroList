@@ -30,7 +30,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(windowScene: windowScene)
 
         let navigationController = UINavigationController()
-        navigationController.navigationBar.prefersLargeTitles = true
         window?.rootViewController = navigationController
         mainCoordinator = AppMainCoordinator(navigationController: navigationController)
         mainCoordinator?.start()

@@ -23,10 +23,10 @@ final class CharacterDetailVM: ViewModel {
     fileprivate let stateSubject = PublishSubject<State>()
     fileprivate let characterSubject: BehaviorSubject<Character?> = BehaviorSubject(value: nil)
 
-    init(characterId: CharacterId, initialName: String? = nil) {
+    init(coordinator: Coordinator, characterId: CharacterId, initialName: String? = nil) {
         self.characterId = characterId
         self.initialName = initialName
-        super.init()
+        super.init(coordinator: coordinator)
     }
 
     fileprivate func loadData() {

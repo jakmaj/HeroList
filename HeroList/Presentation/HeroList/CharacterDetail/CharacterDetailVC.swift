@@ -9,7 +9,9 @@ import Foundation
 import Kingfisher
 import UIKit
 
-final class CharacterDetailVC: ViewController<CharacterDetailVM> {
+final class CharacterDetailVC: BaseViewController, ViewController {
+
+    var vm: CharacterDetailVM!
 
     @IBOutlet private var realNameLabel: UILabel!
     @IBOutlet private var publisherLabel: UILabel!

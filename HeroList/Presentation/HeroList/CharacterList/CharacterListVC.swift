@@ -8,7 +8,9 @@
 import Foundation
 import UIKit
 
-final class CharacterListVC: ViewController<CharacterListVM> {
+final class CharacterListVC: BaseViewController, ViewController {
+
+    var vm: CharacterListVM!
 
     @IBOutlet private var tableView: UITableView!
 

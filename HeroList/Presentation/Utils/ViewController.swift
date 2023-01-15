@@ -9,19 +9,16 @@ import Foundation
 import RxSwift
 import UIKit
 
-class ViewController<VM: ViewModelProtocol>: UIViewController {
+protocol ViewController {
 
-    var vm: VM!
+    associatedtype VM = ViewModelProtocol
+
+    var vm: VM! { get set }
+
+}
+
+class BaseViewController: UIViewController {
 
     let disposeBag = DisposeBag()
 
-    required init(vm: VM, nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle? = nil) {
-        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-        self.vm = vm
-    }
-
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        fatalError("Use `init(vm:,nibName:,bundle:)` instead")
-    }
 }

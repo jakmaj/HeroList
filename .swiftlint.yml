@@ -4,3 +4,6 @@ identifier_name:
     - vc
     - id
     - in
+type_name:
+  excluded:
+    - VM

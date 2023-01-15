@@ -14,6 +14,12 @@ protocol ViewModelProtocol: AnyObject {
 
 class ViewModel: ViewModelProtocol, InputCompatible, OutputCompatible {
 
+    weak var coordinator: Coordinator?
+
+    init(coordinator: Coordinator) {
+        self.coordinator = coordinator
+    }
+
 }
 
 class ReusableViewModel: ViewModelProtocol, InputCompatible, OutputCompatible {
