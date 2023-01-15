@@ -8,8 +8,6 @@
 import Foundation
 import Swinject
 
-// TODO: figure out better solution for testability
-
 final class AppDIContainer {
 
     private static let container = Container(defaultObjectScope: .container)

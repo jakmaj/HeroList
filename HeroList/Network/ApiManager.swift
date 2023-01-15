@@ -10,8 +10,7 @@ import RxSwift
 import RxSwiftExt
 
 protocol ApiManager {
-    func characterList() -> Observable<CharacterList>
-    func characterDetail(characterId: CharacterId) -> Observable<Character>
+    func call<T: Decodable>(request: ApiRequest) -> Observable<T>
 }
 
 final class ApiManagerImpl: ApiManager {
@@ -21,17 +20,11 @@ final class ApiManagerImpl: ApiManager {
 
     let jsonDecoder = JSONDecoder()
 
-    // TODO: move the implementation to some other place?
-    func characterList() -> Observable<CharacterList> {
-        call(request: urlRequest(endpoint: "characters"))
-    }
+    func call<T: Decodable>(request: ApiRequest) -> Observable<T> {
+        let url = request.prepareUrl(baseUrl())
+        let urlRequest = URLRequest(url: url)
 
-    func characterDetail(characterId: CharacterId) -> Observable<Character> {
-        call(request: urlRequest(endpoint: "character/4005-\(characterId)"))
-    }
-
-    private func call<T: Decodable>(request: URLRequest) -> Observable<T> {
-        return URLSession.shared.rx.data(request: request)
+        return URLSession.shared.rx.data(request: urlRequest)
             .map { [weak self] data in
                 guard let self else { throw RuntimeError("deallocated self") }
 
@@ -39,15 +32,16 @@ final class ApiManagerImpl: ApiManager {
             }
     }
 
-    private func urlRequest(endpoint: String) -> URLRequest {
-        guard var url = URL(string: configuration.apiBaseURL) else { fatalError("Error creating base api URL") }
-        url.append(path: endpoint)
+    private func baseUrl() -> URL {
+        guard var url = URL(string: configuration.apiBaseURL) else {
+            fatalError("Error creating base api URL")
+        }
+
         url.append(queryItems: [
             .init(name: "api_key", value: configuration.apiKey),
             .init(name: "format", value: "json")
         ])
-
-        return URLRequest(url: url)
+        return url
     }
 
 }

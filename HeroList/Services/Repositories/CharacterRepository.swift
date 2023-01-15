@@ -8,18 +8,17 @@
 import Foundation
 import RxSwift
 
-// TODO: unify having protocol and implementation in one file or in separate
 final class CharacterRepository: CharacterService {
 
     @Injected
     var apiManager: ApiManager
 
     func characterList() -> Observable<CharacterList> {
-        apiManager.characterList()
+        apiManager.call(request: CharacterListRequest())
     }
 
     func characterDetail(characterId: CharacterId) -> Observable<Character> {
-        apiManager.characterDetail(characterId: characterId)
+        apiManager.call(request: CharacterDetailRequest(characterId: characterId))
     }
 
 }

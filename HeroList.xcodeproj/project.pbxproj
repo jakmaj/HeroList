@@ -53,6 +53,9 @@
 		09E08A3C296B2D74003DEC53 /* CharacterDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E08A3B296B2D74003DEC53 /* CharacterDetailVC.swift */; };
 		09E08A3E296B2D7F003DEC53 /* CharacterDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09E08A3D296B2D7F003DEC53 /* CharacterDetailVC.xib */; };
 		09FBFF7929743B670032183A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 09FBFF7B29743B670032183A /* Localizable.strings */; };
+		09FBFF7E29743DA20032183A /* ApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FBFF7D29743DA20032183A /* ApiRequest.swift */; };
+		09FBFF8029743DD90032183A /* CharacterListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FBFF7F29743DD90032183A /* CharacterListRequest.swift */; };
+		09FBFF8229743E9D0032183A /* CharacterDetailRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FBFF8129743E9D0032183A /* CharacterDetailRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +118,9 @@
 		09E08A3B296B2D74003DEC53 /* CharacterDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CharacterDetailVC.swift; path = ../../../../../../_Showcase/HeroList/HeroList/Presentation/HeroList/CharacterDetail/CharacterDetailVC.swift; sourceTree = "<group>"; };
 		09E08A3D296B2D7F003DEC53 /* CharacterDetailVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = CharacterDetailVC.xib; path = ../../../../../../_Showcase/HeroList/HeroList/Presentation/HeroList/CharacterDetail/CharacterDetailVC.xib; sourceTree = "<group>"; };
 		09FBFF7A29743B670032183A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		09FBFF7D29743DA20032183A /* ApiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequest.swift; sourceTree = "<group>"; };
+		09FBFF7F29743DD90032183A /* CharacterListRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListRequest.swift; sourceTree = "<group>"; };
+		09FBFF8129743E9D0032183A /* CharacterDetailRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -252,8 +258,10 @@
 		09E08A02296B0E3B003DEC53 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				09FBFF7C29743D910032183A /* Requests */,
 				09E08A1D296B264C003DEC53 /* Mapping */,
 				09B7E4E1296CB33B0043A36F /* ApiManager.swift */,
+				09FBFF7D29743DA20032183A /* ApiRequest.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -356,6 +364,15 @@
 				09E08A35296B2D35003DEC53 /* CharacterListItemCell.xib */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		09FBFF7C29743D910032183A /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				09FBFF7F29743DD90032183A /* CharacterListRequest.swift */,
+				09FBFF8129743E9D0032183A /* CharacterDetailRequest.swift */,
+			);
+			path = Requests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -533,6 +550,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09FBFF8229743E9D0032183A /* CharacterDetailRequest.swift in Sources */,
 				09CF02852972E12F00A60925 /* UITableView+Convenience.swift in Sources */,
 				09E08A15296B23B3003DEC53 /* Character.swift in Sources */,
 				09E08A3A296B2D6A003DEC53 /* CharacterDetailVM.swift in Sources */,
@@ -541,6 +559,7 @@
 				09E08A23296B2722003DEC53 /* AppConfiguration.swift in Sources */,
 				09A69EA2296F646600A9E2FE /* ViewModel.swift in Sources */,
 				09A69EA4296F6BBC00A9E2FE /* ViewController.swift in Sources */,
+				09FBFF7E29743DA20032183A /* ApiRequest.swift in Sources */,
 				09E08A2A296B2C22003DEC53 /* CharacterListCoordinator.swift in Sources */,
 				09B7E4E2296CB33B0043A36F /* ApiManager.swift in Sources */,
 				09E08A32296B2CEB003DEC53 /* CharacterListItemCellVM.swift in Sources */,
@@ -553,6 +572,7 @@
 				09E08A0C296B1D58003DEC53 /* Coordinator.swift in Sources */,
 				09E08A38296B2D5E003DEC53 /* CharacterDetailCoordinator.swift in Sources */,
 				09CF02892973228900A60925 /* String+Convenience.swift in Sources */,
+				09FBFF8029743DD90032183A /* CharacterListRequest.swift in Sources */,
 				09CF02822972C42700A60925 /* ConfigurableReusableView.swift in Sources */,
 				0937133129686FD600124E03 /* SceneDelegate.swift in Sources */,
 				09E08A06296B1C67003DEC53 /* AppDIContainer.swift in Sources */,
