@@ -21,7 +21,7 @@ final class CharacterListVC: ViewController<CharacterListVM> {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        title = "Hero List"
+        title = "CharacterListVCTitle".localized
 
         setupTable()
         setupErrorView()
@@ -39,8 +39,8 @@ final class CharacterListVC: ViewController<CharacterListVM> {
     }
 
     private func setupErrorView() {
-        errorLabel.text = "Unable to get list of heroes, please check connection and retry."
-        errorButton.setTitle("Retry", for: .normal)
+        errorLabel.text = "CharacterListVCErrorMessage".localized
+        errorButton.setTitle("Retry".localized, for: .normal)
     }
 
     private func setupRx() {

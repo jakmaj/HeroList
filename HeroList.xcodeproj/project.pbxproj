@@ -52,6 +52,7 @@
 		09E08A3A296B2D6A003DEC53 /* CharacterDetailVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E08A39296B2D6A003DEC53 /* CharacterDetailVM.swift */; };
 		09E08A3C296B2D74003DEC53 /* CharacterDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E08A3B296B2D74003DEC53 /* CharacterDetailVC.swift */; };
 		09E08A3E296B2D7F003DEC53 /* CharacterDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09E08A3D296B2D7F003DEC53 /* CharacterDetailVC.xib */; };
+		09FBFF7929743B670032183A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 09FBFF7B29743B670032183A /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +114,7 @@
 		09E08A39296B2D6A003DEC53 /* CharacterDetailVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CharacterDetailVM.swift; path = ../../../../../../_Showcase/HeroList/HeroList/Presentation/HeroList/CharacterDetail/CharacterDetailVM.swift; sourceTree = "<group>"; };
 		09E08A3B296B2D74003DEC53 /* CharacterDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CharacterDetailVC.swift; path = ../../../../../../_Showcase/HeroList/HeroList/Presentation/HeroList/CharacterDetail/CharacterDetailVC.swift; sourceTree = "<group>"; };
 		09E08A3D296B2D7F003DEC53 /* CharacterDetailVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = CharacterDetailVC.xib; path = ../../../../../../_Showcase/HeroList/HeroList/Presentation/HeroList/CharacterDetail/CharacterDetailVC.xib; sourceTree = "<group>"; };
+		09FBFF7A29743B670032183A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -272,6 +274,7 @@
 				0937133729686FD700124E03 /* Assets.xcassets */,
 				0937133C29686FD700124E03 /* Info.plist */,
 				0937133929686FD700124E03 /* LaunchScreen.storyboard */,
+				09FBFF7B29743B670032183A /* Localizable.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -479,6 +482,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				09E08A3E296B2D7F003DEC53 /* CharacterDetailVC.xib in Resources */,
+				09FBFF7929743B670032183A /* Localizable.strings in Resources */,
 				0937133B29686FD700124E03 /* LaunchScreen.storyboard in Resources */,
 				0937133829686FD700124E03 /* Assets.xcassets in Resources */,
 				09E08A36296B2D35003DEC53 /* CharacterListItemCell.xib in Resources */,
@@ -600,6 +604,14 @@
 				0937133A29686FD700124E03 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		09FBFF7B29743B670032183A /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09FBFF7A29743B670032183A /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

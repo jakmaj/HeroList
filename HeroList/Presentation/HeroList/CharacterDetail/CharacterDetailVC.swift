@@ -26,7 +26,7 @@ final class CharacterDetailVC: ViewController<CharacterDetailVM> {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        title = vm.out.initialName
+        title = vm.out.initialName ?? "CharacterDetailVCTitlePlaceholder".localized
 
         setupImage()
         setupDescriptionTextView()
@@ -48,8 +48,8 @@ final class CharacterDetailVC: ViewController<CharacterDetailVM> {
 
     private func setupErrorView() {
         errorView.layer.cornerRadius = 5
-        errorLabel.text = "Unable to get detail of hero, please check connection and retry."
-        errorButton.setTitle("Retry", for: .normal)
+        errorLabel.text = "CharacterDetailVCErrorMessage".localized
+        errorButton.setTitle("Retry".localized, for: .normal)
     }
 
     private func setupLoadingView() {

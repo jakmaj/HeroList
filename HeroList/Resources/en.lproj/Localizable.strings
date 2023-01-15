@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  HeroList
+
+  Created by Jakub Majdl on 15.01.2023.
+  
+*/
+
+"Retry" = "Retry";
+"CharacterListVCTitle" = "Hero List";
+"CharacterListVCErrorMessage" = "Unable to get list of heroes, please check connection and retry.";
+"CharacterDetailVCTitlePlaceholder" = "Loading...";
+"CharacterDetailVCErrorMessage" = "Unable to get detail of hero, please check connection and retry.";

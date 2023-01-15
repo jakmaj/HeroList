@@ -18,14 +18,14 @@ final class CharacterDetailVM: ViewModel {
     var characterService: CharacterService
 
     fileprivate let characterId: CharacterId
-    fileprivate let initialName: String
+    fileprivate let initialName: String?
 
     fileprivate let stateSubject = PublishSubject<State>()
     fileprivate let characterSubject: BehaviorSubject<Character?> = BehaviorSubject(value: nil)
 
     init(characterId: CharacterId, initialName: String? = nil) {
         self.characterId = characterId
-        self.initialName = initialName ?? "Loading..."
+        self.initialName = initialName
         super.init()
     }
 
@@ -58,7 +58,7 @@ extension Inputs where Base == CharacterDetailVM {
 // Public output
 extension Outputs where Base == CharacterDetailVM {
 
-    var initialName: String { vm.initialName }
+    var initialName: String? { vm.initialName }
 
 }
 
