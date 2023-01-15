@@ -32,6 +32,15 @@ final class CharacterListVC: BaseViewController, ViewController {
         vm.in.viewDidLoad()
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+
+        // remove highlight when returning from detail
+        if let selectedRow = tableView.indexPathForSelectedRow {
+            tableView.deselectRow(at: selectedRow, animated: true)
+        }
+    }
+
     private func setupTable() {
         tableView.registerCell(CharacterListItemCell.self)
         tableView.delegate = self
