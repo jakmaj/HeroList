@@ -9,21 +9,21 @@ import Foundation
 import RxSwift
 
 protocol CharacterListVMDelegate: AnyObject {
-    func showCharacterDetail(characterId: CharacterId)
-}
-
-enum CharacterListVMState {
-    case normal, loading, error
+    func showCharacterDetail(characterId: CharacterId, initialName: String)
 }
 
 final class CharacterListVM: ViewModel {
 
+    enum State {
+        case normal, loading, error
+    }
+
     @Injected
     var characterService: CharacterService
 
-    weak var delegate: CharacterListVMDelegate?
+    fileprivate weak var delegate: CharacterListVMDelegate?
 
-    fileprivate let stateSubject = PublishSubject<CharacterListVMState>()
+    fileprivate let stateSubject = PublishSubject<State>()
     fileprivate let reloadTableSubject = PublishSubject<Void>()
 
     fileprivate var cellVMs: [ReusableViewModel] = []
@@ -45,10 +45,11 @@ final class CharacterListVM: ViewModel {
                 self?.reloadTableSubject.onNext(())
                 self?.stateSubject.onNext(.normal)
             })
-            .do(onError: { [weak self] error in
+            .catch { [weak self] error in
                 print("Error getting list of characters: \(error)")
                 self?.stateSubject.onNext(.error)
-            })
+                return Observable.empty()
+            }
             .subscribe()
     }
 
@@ -59,6 +60,9 @@ extension Inputs where Base == CharacterListVM {
 
     func viewDidLoad() { vm.loadData() }
     func reloadData() { vm.loadData() }
+    func routeToDetail(characterId: CharacterId, initialName: String) {
+        vm.delegate?.showCharacterDetail(characterId: characterId, initialName: initialName)
+    }
 
 }
 
@@ -77,7 +81,7 @@ extension Reactive where Base == Inputs<CharacterListVM> {
 // Public rx output
 extension Reactive where Base == Outputs<CharacterListVM> {
 
-    var state: Observable<CharacterListVMState> { base.vm.stateSubject.asObservable() }
+    var state: Observable<CharacterListVM.State> { base.vm.stateSubject.asObservable() }
     var reloadTable: Observable<Void> { base.vm.reloadTableSubject.asObservable() }
 
 }

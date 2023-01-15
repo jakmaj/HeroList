@@ -20,6 +20,7 @@ final class CharacterListItemCell: TableCell<CharacterListItemCellVM> {
         super.awakeFromNib()
 
         avatarImageView.kf.indicatorType = .activity
+        avatarImageView.layer.cornerRadius = 5
     }
 
     override func configure() {

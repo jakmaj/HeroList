@@ -27,7 +27,7 @@ final class ApiManagerImpl: ApiManager {
     }
 
     func characterDetail(characterId: CharacterId) -> Observable<Character> {
-        call(request: urlRequest(endpoint: "character/\(characterId)"))
+        call(request: urlRequest(endpoint: "character/4005-\(characterId)"))
     }
 
     private func call<T: Decodable>(request: URLRequest) -> Observable<T> {

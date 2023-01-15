@@ -10,7 +10,11 @@ import Foundation
 typealias CharacterId = Int
 
 struct Character {
-    // TODO: proper properties
     let id: CharacterId
     let name: String
+    let realName: String?
+    let publisherName: String
+    let deck: String
+    let description: String
+    let imageURL: URL?
 }

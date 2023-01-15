@@ -67,7 +67,7 @@ final class CharacterListVC: ViewController<CharacterListVM> {
             .disposed(by: disposeBag)
     }
 
-    private func updateForState(_ state: CharacterListVMState) {
+    private func updateForState(_ state: CharacterListVM.State) {
         errorView.isHidden = state != .error
         loadingIndicator.isHidden = state != .loading
         tableView.isHidden = state != .normal
@@ -92,6 +92,12 @@ extension CharacterListVC: UITableViewDelegate, UITableViewDataSource {
         configurableCell?.configure()
 
         return cell
+    }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let cellVM = vm.out.cellVMs[safe: indexPath.item] as? CharacterListItemCellVM else { return }
+
+        vm.in.routeToDetail(characterId: cellVM.out.id, initialName: cellVM.out.name)
     }
 
 }

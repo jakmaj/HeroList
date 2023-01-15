@@ -30,8 +30,15 @@ class CharacterListCoordinator: Coordinator {
 
 extension CharacterListCoordinator: CharacterListVMDelegate {
 
-    func showCharacterDetail(characterId: CharacterId) {
-        // TODO: implement routing
+    func showCharacterDetail(characterId: CharacterId, initialName: String) {
+        let coordinator = CharacterDetailCoordinator(
+            navigationController: navigationController,
+            characterId: characterId,
+            initialName: initialName
+        )
+
+        children.append(coordinator)
+        coordinator.start()
     }
 
 }

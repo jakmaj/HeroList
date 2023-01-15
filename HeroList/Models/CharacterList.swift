@@ -8,8 +8,6 @@
 import Foundation
 
 struct CharacterList {
-    let status: Int
-    let error: String
     let characters: [CharacterListItem]
 }
 

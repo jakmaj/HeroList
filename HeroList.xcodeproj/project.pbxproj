@@ -30,6 +30,7 @@
 		09CF02822972C42700A60925 /* ConfigurableReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09CF02812972C42700A60925 /* ConfigurableReusableView.swift */; };
 		09CF02852972E12F00A60925 /* UITableView+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09CF02842972E12F00A60925 /* UITableView+Convenience.swift */; };
 		09CF02872972E44C00A60925 /* Collection+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09CF02862972E44C00A60925 /* Collection+Convenience.swift */; };
+		09CF02892973228900A60925 /* String+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09CF02882973228900A60925 /* String+Convenience.swift */; };
 		09E08A06296B1C67003DEC53 /* AppDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E08A05296B1C67003DEC53 /* AppDIContainer.swift */; };
 		09E08A08296B1CCD003DEC53 /* AppMainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E08A07296B1CCD003DEC53 /* AppMainCoordinator.swift */; };
 		09E08A0C296B1D58003DEC53 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E08A0B296B1D58003DEC53 /* Coordinator.swift */; };
@@ -90,6 +91,7 @@
 		09CF02812972C42700A60925 /* ConfigurableReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurableReusableView.swift; sourceTree = "<group>"; };
 		09CF02842972E12F00A60925 /* UITableView+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Convenience.swift"; sourceTree = "<group>"; };
 		09CF02862972E44C00A60925 /* Collection+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Convenience.swift"; sourceTree = "<group>"; };
+		09CF02882973228900A60925 /* String+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Convenience.swift"; sourceTree = "<group>"; };
 		09E08A05296B1C67003DEC53 /* AppDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDIContainer.swift; path = ../../../../_Showcase/HeroList/HeroList/Application/AppDIContainer.swift; sourceTree = "<group>"; };
 		09E08A07296B1CCD003DEC53 /* AppMainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppMainCoordinator.swift; path = ../../../../_Showcase/HeroList/HeroList/Application/AppMainCoordinator.swift; sourceTree = "<group>"; };
 		09E08A0B296B1D58003DEC53 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Coordinator.swift; path = ../../../../../_Showcase/HeroList/HeroList/Presentation/Utils/Coordinator.swift; sourceTree = "<group>"; };
@@ -209,6 +211,7 @@
 			children = (
 				09CF02842972E12F00A60925 /* UITableView+Convenience.swift */,
 				09CF02862972E44C00A60925 /* Collection+Convenience.swift */,
+				09CF02882973228900A60925 /* String+Convenience.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -335,9 +338,9 @@
 			isa = PBXGroup;
 			children = (
 				09E08A37296B2D5E003DEC53 /* CharacterDetailCoordinator.swift */,
-				09E08A39296B2D6A003DEC53 /* CharacterDetailVM.swift */,
-				09E08A3B296B2D74003DEC53 /* CharacterDetailVC.swift */,
 				09E08A3D296B2D7F003DEC53 /* CharacterDetailVC.xib */,
+				09E08A3B296B2D74003DEC53 /* CharacterDetailVC.swift */,
+				09E08A39296B2D6A003DEC53 /* CharacterDetailVM.swift */,
 			);
 			path = CharacterDetail;
 			sourceTree = "<group>";
@@ -545,6 +548,7 @@
 				09CF02802972C3F800A60925 /* TableCell.swift in Sources */,
 				09E08A0C296B1D58003DEC53 /* Coordinator.swift in Sources */,
 				09E08A38296B2D5E003DEC53 /* CharacterDetailCoordinator.swift in Sources */,
+				09CF02892973228900A60925 /* String+Convenience.swift in Sources */,
 				09CF02822972C42700A60925 /* ConfigurableReusableView.swift in Sources */,
 				0937133129686FD600124E03 /* SceneDelegate.swift in Sources */,
 				09E08A06296B1C67003DEC53 /* AppDIContainer.swift in Sources */,

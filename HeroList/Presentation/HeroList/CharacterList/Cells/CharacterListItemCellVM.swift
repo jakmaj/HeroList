@@ -21,6 +21,7 @@ final class CharacterListItemCellVM: ReusableViewModel {
 // Public output
 extension Outputs where Base == CharacterListItemCellVM {
 
+    var id: CharacterId { vm.character.id }
     var name: String { vm.character.name }
     var realName: String? { vm.character.realName }
     var publisherName: String { vm.character.publisherName }

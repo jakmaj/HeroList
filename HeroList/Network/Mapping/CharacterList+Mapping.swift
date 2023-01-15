@@ -18,8 +18,11 @@ extension CharacterList: Decodable {
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
 
-        status = try container.decode(Int.self, forKey: .status)
-        error = try container.decode(String.self, forKey: .error)
+        let error = try container.decode(String.self, forKey: .error)
+        if error != "OK" { throw RuntimeError("Received error from API: \(error)")}
+        let status = try container.decode(Int.self, forKey: .status)
+        if status != 1 { throw RuntimeError("Received error code from API: \(status)")}
+
         characters = try container.decode([CharacterListItem].self, forKey: .characters)
     }
 }
