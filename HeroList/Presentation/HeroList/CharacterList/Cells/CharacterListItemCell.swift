@@ -31,7 +31,7 @@ final class CharacterListItemCell: TableCell<CharacterListItemCellVM> {
         realNameLabel.isHidden = vm.out.realName == nil
         publisherNameLabel.text = vm.out.publisherName
         avatarImageView.kf.setImage(
-            with: vm.out.imageUrl,
+            with: vm.out.imageURL,
             placeholder: UIImage(named: "avatarPlaceholder")
         )
     }

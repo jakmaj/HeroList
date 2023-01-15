@@ -25,6 +25,6 @@ extension Outputs where Base == CharacterListItemCellVM {
     var name: String { vm.character.name }
     var realName: String? { vm.character.realName }
     var publisherName: String { vm.character.publisherName }
-    var imageUrl: URL? { vm.character.imageURL }
+    var imageURL: URL? { vm.character.imageURL }
 
 }
