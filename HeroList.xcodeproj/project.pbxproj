@@ -12,6 +12,8 @@
 		0937133129686FD600124E03 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0937133029686FD600124E03 /* SceneDelegate.swift */; };
 		0937133829686FD700124E03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0937133729686FD700124E03 /* Assets.xcassets */; };
 		0937133B29686FD700124E03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0937133929686FD700124E03 /* LaunchScreen.storyboard */; };
+		0978BC692975D5D0008D2B98 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0978BC682975D5D0008D2B98 /* LoadingView.swift */; };
+		0978BC6B2975D8CC008D2B98 /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0978BC6A2975D8CC008D2B98 /* UIView+Constraints.swift */; };
 		09A69EA2296F646600A9E2FE /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A69EA1296F646600A9E2FE /* ViewModel.swift */; };
 		09A69EA4296F6BBC00A9E2FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A69EA3296F6BBC00A9E2FE /* ViewController.swift */; };
 		09B7E4D7296CAFED0043A36F /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 09B7E4D6296CAFED0043A36F /* RxCocoa */; };
@@ -97,6 +99,8 @@
 		0937133A29686FD700124E03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0937133C29686FD700124E03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0937134129686FD700124E03 /* HeroListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeroListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0978BC682975D5D0008D2B98 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		0978BC6A2975D8CC008D2B98 /* UIView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
 		09A69EA1296F646600A9E2FE /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		09A69EA3296F6BBC00A9E2FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		09B7E4E1296CB33B0043A36F /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
@@ -208,6 +212,14 @@
 			path = HeroListTests;
 			sourceTree = "<group>";
 		};
+		0978BC672975D5B3008D2B98 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0978BC682975D5D0008D2B98 /* LoadingView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		09B7E4E4296CB9440043A36F /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -220,6 +232,7 @@
 			isa = PBXGroup;
 			children = (
 				09CF02842972E12F00A60925 /* UITableView+Convenience.swift */,
+				0978BC6A2975D8CC008D2B98 /* UIView+Constraints.swift */,
 				09CF02862972E44C00A60925 /* Collection+Convenience.swift */,
 				09CF02882973228900A60925 /* String+Convenience.swift */,
 			);
@@ -272,6 +285,7 @@
 			isa = PBXGroup;
 			children = (
 				09E08A09296B1D3D003DEC53 /* HeroList */,
+				0978BC672975D5B3008D2B98 /* Views */,
 				09E08A0A296B1D47003DEC53 /* Utils */,
 				09CF02832972E0D800A60925 /* Extensions */,
 			);
@@ -564,6 +578,7 @@
 				09B7E4E2296CB33B0043A36F /* ApiManager.swift in Sources */,
 				09E08A32296B2CEB003DEC53 /* CharacterListItemCellVM.swift in Sources */,
 				09E08A1F296B2663003DEC53 /* Character+Mapping.swift in Sources */,
+				0978BC692975D5D0008D2B98 /* LoadingView.swift in Sources */,
 				09B7E4E6296CB94E0043A36F /* RuntimeError.swift in Sources */,
 				09E08A1A296B247F003DEC53 /* CharacterRepository.swift in Sources */,
 				09E08A08296B1CCD003DEC53 /* AppMainCoordinator.swift in Sources */,
@@ -572,6 +587,7 @@
 				09E08A0C296B1D58003DEC53 /* Coordinator.swift in Sources */,
 				09E08A38296B2D5E003DEC53 /* CharacterDetailCoordinator.swift in Sources */,
 				09CF02892973228900A60925 /* String+Convenience.swift in Sources */,
+				0978BC6B2975D8CC008D2B98 /* UIView+Constraints.swift in Sources */,
 				09FBFF8029743DD90032183A /* CharacterListRequest.swift in Sources */,
 				09CF02822972C42700A60925 /* ConfigurableReusableView.swift in Sources */,
 				0937133129686FD600124E03 /* SceneDelegate.swift in Sources */,

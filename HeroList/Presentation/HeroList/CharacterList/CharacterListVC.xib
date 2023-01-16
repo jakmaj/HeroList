@@ -13,7 +13,6 @@
                 <outlet property="errorButton" destination="PU5-Pe-tJE" id="GJX-V8-vGw"/>
                 <outlet property="errorLabel" destination="FKB-eD-GJk" id="eBg-Ng-ooE"/>
                 <outlet property="errorView" destination="ijC-re-bGp" id="bSc-M9-q80"/>
-                <outlet property="loadingIndicator" destination="4FJ-FB-JLl" id="zkB-gA-J86"/>
                 <outlet property="tableView" destination="J0U-E5-THo" id="jZx-SU-DAa"/>
                 <outlet property="view" destination="iN0-l3-epB" id="QCJ-QY-xA7"/>
             </connections>
@@ -56,9 +55,6 @@
                                 <constraint firstItem="FKB-eD-GJk" firstAttribute="centerX" secondItem="ijC-re-bGp" secondAttribute="centerX" id="pMw-61-vSC"/>
                             </constraints>
                         </view>
-                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="4FJ-FB-JLl">
-                            <rect key="frame" x="178" y="407.66666666666669" width="37" height="37"/>
-                        </activityIndicatorView>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
@@ -66,10 +62,8 @@
                         <constraint firstAttribute="bottom" secondItem="J0U-E5-THo" secondAttribute="bottom" id="Hzy-Wf-UJp"/>
                         <constraint firstItem="J0U-E5-THo" firstAttribute="top" secondItem="JmQ-Sa-T1Y" secondAttribute="top" id="Rs0-bK-Ldu"/>
                         <constraint firstItem="ijC-re-bGp" firstAttribute="leading" secondItem="JmQ-Sa-T1Y" secondAttribute="leading" id="TpM-LR-01j"/>
-                        <constraint firstItem="4FJ-FB-JLl" firstAttribute="centerY" secondItem="JmQ-Sa-T1Y" secondAttribute="centerY" id="YfG-4u-ZL5"/>
                         <constraint firstAttribute="trailing" secondItem="J0U-E5-THo" secondAttribute="trailing" id="bGk-xd-bqu"/>
                         <constraint firstAttribute="trailing" secondItem="ijC-re-bGp" secondAttribute="trailing" id="eQ6-rX-FHl"/>
-                        <constraint firstItem="4FJ-FB-JLl" firstAttribute="centerX" secondItem="JmQ-Sa-T1Y" secondAttribute="centerX" id="mq4-r2-1bN"/>
                         <constraint firstItem="ijC-re-bGp" firstAttribute="centerY" secondItem="JmQ-Sa-T1Y" secondAttribute="centerY" id="ri2-zJ-Ja1"/>
                     </constraints>
                 </view>

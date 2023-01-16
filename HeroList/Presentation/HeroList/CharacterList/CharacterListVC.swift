@@ -18,8 +18,6 @@ final class CharacterListVC: BaseViewController, ViewController {
     @IBOutlet private var errorLabel: UILabel!
     @IBOutlet private var errorButton: UIButton!
 
-    @IBOutlet private var loadingIndicator: UIActivityIndicatorView!
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -80,8 +78,8 @@ final class CharacterListVC: BaseViewController, ViewController {
 
     private func updateForState(_ state: CharacterListVM.State) {
         errorView.isHidden = state != .error
-        loadingIndicator.isHidden = state != .loading
-        tableView.isHidden = state != .normal
+
+        state == .loading ? showLoading() : hideLoading()
     }
 
 }

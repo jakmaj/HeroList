@@ -23,8 +23,6 @@ final class CharacterDetailVC: BaseViewController, ViewController {
     @IBOutlet private var errorLabel: UILabel!
     @IBOutlet private var errorButton: UIButton!
 
-    @IBOutlet private var loadingView: UIView!
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -33,7 +31,6 @@ final class CharacterDetailVC: BaseViewController, ViewController {
         setupImage()
         setupDescriptionTextView()
         setupErrorView()
-        setupLoadingView()
         setupRx()
 
         vm.in.viewDidLoad()
@@ -52,10 +49,6 @@ final class CharacterDetailVC: BaseViewController, ViewController {
         errorView.layer.cornerRadius = 5
         errorLabel.text = "CharacterDetailVCErrorMessage".localized
         errorButton.setTitle("Retry".localized, for: .normal)
-    }
-
-    private func setupLoadingView() {
-        loadingView.layer.cornerRadius = 5
     }
 
     private func setupRx() {
@@ -107,7 +100,7 @@ final class CharacterDetailVC: BaseViewController, ViewController {
 
     private func updateForState(_ state: CharacterDetailVM.State) {
         errorView.isHidden = state != .error
-        loadingView.isHidden = state != .loading
+        state == .loading ? showLoading() : hideLoading()
     }
 
 }

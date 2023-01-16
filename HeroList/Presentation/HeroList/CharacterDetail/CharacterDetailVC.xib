@@ -17,7 +17,6 @@
                 <outlet property="errorButton" destination="5DO-Q2-G3C" id="sDs-9c-z5h"/>
                 <outlet property="errorLabel" destination="XhY-iT-b5g" id="Jkm-kJ-o26"/>
                 <outlet property="errorView" destination="yhy-kE-4lJ" id="DdP-lq-uAU"/>
-                <outlet property="loadingView" destination="86E-zj-0NX" id="r5I-bz-rKX"/>
                 <outlet property="publisherLabel" destination="dzy-eH-rYq" id="GMc-tt-eIB"/>
                 <outlet property="realNameLabel" destination="I2M-9G-mtZ" id="lpY-ss-g4S"/>
                 <outlet property="view" destination="iN0-l3-epB" id="ule-zd-8iR"/>
@@ -122,21 +121,6 @@
                         <constraint firstItem="XhY-iT-b5g" firstAttribute="top" secondItem="yhy-kE-4lJ" secondAttribute="top" constant="8" id="dj9-5q-idd"/>
                     </constraints>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="86E-zj-0NX" userLabel="Loading View">
-                    <rect key="frame" x="162" y="391.66666666666669" width="69" height="69"/>
-                    <subviews>
-                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="YQ0-Y9-Zef">
-                            <rect key="frame" x="16" y="16" width="37" height="37"/>
-                        </activityIndicatorView>
-                    </subviews>
-                    <color key="backgroundColor" name="DialogBackground"/>
-                    <constraints>
-                        <constraint firstItem="YQ0-Y9-Zef" firstAttribute="leading" secondItem="86E-zj-0NX" secondAttribute="leading" constant="16" id="Bgm-x3-m1f"/>
-                        <constraint firstItem="YQ0-Y9-Zef" firstAttribute="top" secondItem="86E-zj-0NX" secondAttribute="top" constant="16" id="LQT-Xu-Ce9"/>
-                        <constraint firstAttribute="bottom" secondItem="YQ0-Y9-Zef" secondAttribute="bottom" constant="16" id="bm1-vs-ZZ8"/>
-                        <constraint firstAttribute="trailing" secondItem="YQ0-Y9-Zef" secondAttribute="trailing" constant="16" id="g30-Lx-DxL"/>
-                    </constraints>
-                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -145,11 +129,9 @@
                 <constraint firstItem="yhy-kE-4lJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="HMV-mp-dQA"/>
                 <constraint firstItem="0wj-Vb-ros" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="JfE-Zd-gKC"/>
                 <constraint firstItem="yhy-kE-4lJ" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="TIS-fn-qcN"/>
-                <constraint firstItem="86E-zj-0NX" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="VKx-EM-8O6"/>
                 <constraint firstItem="GsH-yA-aUh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="dKs-Ep-O8D"/>
                 <constraint firstAttribute="trailing" secondItem="GsH-yA-aUh" secondAttribute="trailing" id="kxe-TQ-VNI"/>
                 <constraint firstAttribute="trailing" secondItem="yhy-kE-4lJ" secondAttribute="trailing" constant="8" id="wgv-Nm-eFL"/>
-                <constraint firstItem="86E-zj-0NX" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="xD0-91-khJ"/>
                 <constraint firstItem="GsH-yA-aUh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="xwi-Fe-X5l"/>
             </constraints>
             <point key="canvasLocation" x="121.37404580152672" y="20.422535211267608"/>
@@ -157,7 +139,7 @@
     </objects>
     <resources>
         <namedColor name="DialogBackground">
-            <color red="0.67843137254901964" green="0.68627450980392157" blue="0.68627450980392157" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.67799997329711914" green="0.68599998950958252" blue="0.68599998950958252" alpha="0.80000001192092896" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
