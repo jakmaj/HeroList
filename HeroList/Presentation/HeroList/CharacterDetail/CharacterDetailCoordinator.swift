@@ -35,6 +35,6 @@ final class CharacterDetailCoordinator: Coordinator {
         let vc = CharacterDetailVC()
         vc.vm = vm
 
-        navigationController.pushViewController(vc, animated: false)
+        navigationController.pushViewController(vc, animated: true)
     }
 }

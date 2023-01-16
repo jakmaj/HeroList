@@ -25,7 +25,7 @@ class ViewModel: ViewModelProtocol, InputCompatible, OutputCompatible {
 class ReusableViewModel: ViewModelProtocol, InputCompatible, OutputCompatible {
 
     static var reusableIdentifier: String {
-        return String(describing: self).components(separatedBy: ".").last!
+        String(describing: self)
     }
 
 }

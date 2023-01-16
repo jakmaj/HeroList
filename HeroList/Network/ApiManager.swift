@@ -34,7 +34,7 @@ final class ApiManagerImpl: ApiManager {
 
     private func baseUrl() -> URL {
         guard var url = URL(string: configuration.apiBaseURL) else {
-            fatalError("Error creating base api URL")
+            fatalError("Error creating base api URL.")
         }
 
         url.append(queryItems: [
