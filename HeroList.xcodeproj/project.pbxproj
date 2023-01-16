@@ -106,27 +106,27 @@
 		09CF02842972E12F00A60925 /* UITableView+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Convenience.swift"; sourceTree = "<group>"; };
 		09CF02862972E44C00A60925 /* Collection+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Convenience.swift"; sourceTree = "<group>"; };
 		09CF02882973228900A60925 /* String+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Convenience.swift"; sourceTree = "<group>"; };
-		09E08A05296B1C67003DEC53 /* AppDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDIContainer.swift; path = ../../../../_Showcase/HeroList/HeroList/Application/AppDIContainer.swift; sourceTree = "<group>"; };
-		09E08A07296B1CCD003DEC53 /* AppMainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppMainCoordinator.swift; path = ../../../../_Showcase/HeroList/HeroList/Application/AppMainCoordinator.swift; sourceTree = "<group>"; };
-		09E08A0B296B1D58003DEC53 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Coordinator.swift; path = ../../../../../_Showcase/HeroList/HeroList/Presentation/Utils/Coordinator.swift; sourceTree = "<group>"; };
-		09E08A12296B23AE003DEC53 /* CharacterList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CharacterList.swift; path = ../../../../_Showcase/HeroList/HeroList/Models/CharacterList.swift; sourceTree = "<group>"; };
-		09E08A14296B23B3003DEC53 /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Character.swift; path = ../../../../_Showcase/HeroList/HeroList/Models/Character.swift; sourceTree = "<group>"; };
-		09E08A17296B2403003DEC53 /* CharacterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CharacterService.swift; path = ../../../../../_Showcase/HeroList/HeroList/Services/Interfaces/CharacterService.swift; sourceTree = "<group>"; };
-		09E08A19296B247F003DEC53 /* CharacterRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CharacterRepository.swift; path = ../../../../../_Showcase/HeroList/HeroList/Services/Repositories/CharacterRepository.swift; sourceTree = "<group>"; };
-		09E08A1E296B2663003DEC53 /* Character+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Character+Mapping.swift"; path = "../../../../../_Showcase/HeroList/HeroList/Network/Mapping/Character+Mapping.swift"; sourceTree = "<group>"; };
-		09E08A20296B26B7003DEC53 /* CharacterList+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "CharacterList+Mapping.swift"; path = "../../../../../_Showcase/HeroList/HeroList/Network/Mapping/CharacterList+Mapping.swift"; sourceTree = "<group>"; };
-		09E08A22296B2722003DEC53 /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppConfiguration.swift; path = ../../../../_Showcase/HeroList/HeroList/Application/AppConfiguration.swift; sourceTree = "<group>"; };
+		09E08A05296B1C67003DEC53 /* AppDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDIContainer.swift; sourceTree = "<group>"; };
+		09E08A07296B1CCD003DEC53 /* AppMainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMainCoordinator.swift; sourceTree = "<group>"; };
+		09E08A0B296B1D58003DEC53 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		09E08A12296B23AE003DEC53 /* CharacterList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterList.swift; sourceTree = "<group>"; };
+		09E08A14296B23B3003DEC53 /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		09E08A17296B2403003DEC53 /* CharacterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterService.swift; sourceTree = "<group>"; };
+		09E08A19296B247F003DEC53 /* CharacterRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterRepository.swift; sourceTree = "<group>"; };
+		09E08A1E296B2663003DEC53 /* Character+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Character+Mapping.swift"; sourceTree = "<group>"; };
+		09E08A20296B26B7003DEC53 /* CharacterList+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CharacterList+Mapping.swift"; sourceTree = "<group>"; };
+		09E08A22296B2722003DEC53 /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
 		09E08A29296B2C22003DEC53 /* CharacterListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListCoordinator.swift; sourceTree = "<group>"; };
-		09E08A2B296B2C77003DEC53 /* CharacterListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CharacterListVM.swift; path = ../../../../../../_Showcase/HeroList/HeroList/Presentation/HeroList/CharacterList/CharacterListVM.swift; sourceTree = "<group>"; };
-		09E08A2D296B2C95003DEC53 /* CharacterListVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = CharacterListVC.xib; path = ../../../../../../_Showcase/HeroList/HeroList/Presentation/HeroList/CharacterList/CharacterListVC.xib; sourceTree = "<group>"; };
+		09E08A2B296B2C77003DEC53 /* CharacterListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListVM.swift; sourceTree = "<group>"; };
+		09E08A2D296B2C95003DEC53 /* CharacterListVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterListVC.xib; sourceTree = "<group>"; };
 		09E08A2F296B2CA4003DEC53 /* CharacterListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListVC.swift; sourceTree = "<group>"; };
-		09E08A31296B2CEB003DEC53 /* CharacterListItemCellVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CharacterListItemCellVM.swift; path = ../../../../../../../_Showcase/HeroList/HeroList/Presentation/HeroList/CharacterList/Cells/CharacterListItemCellVM.swift; sourceTree = "<group>"; };
-		09E08A33296B2D26003DEC53 /* CharacterListItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CharacterListItemCell.swift; path = ../../../../../../../_Showcase/HeroList/HeroList/Presentation/HeroList/CharacterList/Cells/CharacterListItemCell.swift; sourceTree = "<group>"; };
-		09E08A35296B2D35003DEC53 /* CharacterListItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = CharacterListItemCell.xib; path = ../../../../../../../_Showcase/HeroList/HeroList/Presentation/HeroList/CharacterList/Cells/CharacterListItemCell.xib; sourceTree = "<group>"; };
-		09E08A37296B2D5E003DEC53 /* CharacterDetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CharacterDetailCoordinator.swift; path = ../../../../../../_Showcase/HeroList/HeroList/Presentation/HeroList/CharacterDetail/CharacterDetailCoordinator.swift; sourceTree = "<group>"; };
-		09E08A39296B2D6A003DEC53 /* CharacterDetailVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CharacterDetailVM.swift; path = ../../../../../../_Showcase/HeroList/HeroList/Presentation/HeroList/CharacterDetail/CharacterDetailVM.swift; sourceTree = "<group>"; };
-		09E08A3B296B2D74003DEC53 /* CharacterDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CharacterDetailVC.swift; path = ../../../../../../_Showcase/HeroList/HeroList/Presentation/HeroList/CharacterDetail/CharacterDetailVC.swift; sourceTree = "<group>"; };
-		09E08A3D296B2D7F003DEC53 /* CharacterDetailVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = CharacterDetailVC.xib; path = ../../../../../../_Showcase/HeroList/HeroList/Presentation/HeroList/CharacterDetail/CharacterDetailVC.xib; sourceTree = "<group>"; };
+		09E08A31296B2CEB003DEC53 /* CharacterListItemCellVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListItemCellVM.swift; sourceTree = "<group>"; };
+		09E08A33296B2D26003DEC53 /* CharacterListItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListItemCell.swift; sourceTree = "<group>"; };
+		09E08A35296B2D35003DEC53 /* CharacterListItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterListItemCell.xib; sourceTree = "<group>"; };
+		09E08A37296B2D5E003DEC53 /* CharacterDetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailCoordinator.swift; sourceTree = "<group>"; };
+		09E08A39296B2D6A003DEC53 /* CharacterDetailVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailVM.swift; sourceTree = "<group>"; };
+		09E08A3B296B2D74003DEC53 /* CharacterDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailVC.swift; sourceTree = "<group>"; };
+		09E08A3D296B2D7F003DEC53 /* CharacterDetailVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterDetailVC.xib; sourceTree = "<group>"; };
 		09FBFF7A29743B670032183A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		09FBFF7D29743DA20032183A /* ApiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequest.swift; sourceTree = "<group>"; };
 		09FBFF7F29743DD90032183A /* CharacterListRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListRequest.swift; sourceTree = "<group>"; };
@@ -361,9 +361,9 @@
 		09E08A28296B2BDD003DEC53 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				09E08A31296B2CEB003DEC53 /* CharacterListItemCellVM.swift */,
-				09E08A33296B2D26003DEC53 /* CharacterListItemCell.swift */,
 				09E08A35296B2D35003DEC53 /* CharacterListItemCell.xib */,
+				09E08A33296B2D26003DEC53 /* CharacterListItemCell.swift */,
+				09E08A31296B2CEB003DEC53 /* CharacterListItemCellVM.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -447,8 +447,6 @@
 			);
 			name = HeroListTests;
 			packageProductDependencies = (
-				09FBFF922974820E0032183A /* RxSwift-Dynamic */,
-				09FBFF96297482160032183A /* RxCocoa-Dynamic */,
 				09FBFFA1297483550032183A /* RxTest-Dynamic */,
 				09FBFFA52974835A0032183A /* RxBlocking-Dynamic */,
 				09FBFFA82974837B0032183A /* RxSwift */,
@@ -940,16 +938,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 09CF027C2972BC5600A60925 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
-		};
-		09FBFF922974820E0032183A /* RxSwift-Dynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 09B7E4D3296CAFED0043A36F /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = "RxSwift-Dynamic";
-		};
-		09FBFF96297482160032183A /* RxCocoa-Dynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 09B7E4D3296CAFED0043A36F /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = "RxCocoa-Dynamic";
 		};
 		09FBFFA1297483550032183A /* RxTest-Dynamic */ = {
 			isa = XCSwiftPackageProductDependency;
