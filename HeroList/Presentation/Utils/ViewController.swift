@@ -40,4 +40,29 @@ class BaseViewController: UIViewController {
         loadingView?.isHidden = true
     }
 
+    func showError(message: String, dismissable: Bool = true, retryHandler: (() -> Void)? = nil) {
+        let alert = UIAlertController(
+            title: "Error".localized,
+            message: message,
+            preferredStyle: .alert
+        )
+
+        if dismissable {
+            alert.addAction(UIAlertAction(
+                title: "Dismiss".localized,
+                style: .default
+            ))
+        }
+
+        if let retryHandler {
+            alert.addAction(UIAlertAction(
+                title: "Retry".localized,
+                style: .default,
+                handler: { _ in retryHandler() }
+            ))
+        }
+
+        present(alert, animated: true)
+    }
+
 }

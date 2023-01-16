@@ -6,8 +6,10 @@
   
 */
 
+"Error" = "Error";
 "Retry" = "Retry";
+"Dismiss" = "Dismiss";
 "CharacterListVCTitle" = "Hero List";
-"CharacterListVCErrorMessage" = "Unable to get list of heroes, please check connection and retry.";
+"CharacterListVCErrorMessage" = "Unable to get list of heroes, please check your connection and try again.";
 "CharacterDetailVCTitlePlaceholder" = "Loading...";
-"CharacterDetailVCErrorMessage" = "Unable to get detail of hero, please check connection and retry.";
+"CharacterDetailVCErrorMessage" = "Unable to get detail of hero, please check yout connection and try again.";

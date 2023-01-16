@@ -19,10 +19,6 @@ final class CharacterDetailVC: BaseViewController, ViewController {
     @IBOutlet private var avatarImageView: UIImageView!
     @IBOutlet private var descriptionTextView: UITextView!
 
-    @IBOutlet private var errorView: UIView!
-    @IBOutlet private var errorLabel: UILabel!
-    @IBOutlet private var errorButton: UIButton!
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -30,7 +26,6 @@ final class CharacterDetailVC: BaseViewController, ViewController {
 
         setupImage()
         setupDescriptionTextView()
-        setupErrorView()
         setupRx()
 
         vm.in.viewDidLoad()
@@ -43,12 +38,6 @@ final class CharacterDetailVC: BaseViewController, ViewController {
     private func setupDescriptionTextView() {
         descriptionTextView.textContainerInset = .zero
         descriptionTextView.textContainer.lineFragmentPadding = 0
-    }
-
-    private func setupErrorView() {
-        errorView.layer.cornerRadius = 5
-        errorLabel.text = "CharacterDetailVCErrorMessage".localized
-        errorButton.setTitle("Retry".localized, for: .normal)
     }
 
     private func setupRx() {
@@ -81,13 +70,6 @@ final class CharacterDetailVC: BaseViewController, ViewController {
             .bind(to: descriptionTextView.rx.attributedText)
             .disposed(by: disposeBag)
 
-        errorButton.rx.tap
-            .do(onNext: { [weak self] in
-                self?.vm.in.reloadData()
-        })
-        .subscribe()
-        .disposed(by: disposeBag)
-
         vm.out.rx.state
             .distinctUntilChanged()
             .do(onNext: { [weak self] state in
@@ -99,8 +81,13 @@ final class CharacterDetailVC: BaseViewController, ViewController {
     }
 
     private func updateForState(_ state: CharacterDetailVM.State) {
-        errorView.isHidden = state != .error
         state == .loading ? showLoading() : hideLoading()
+
+        if state == .error {
+            showError(message: "CharacterDetailVCErrorMessage".localized) { [weak self] in
+                self?.vm.in.reloadData()
+            }
+        }
     }
 
 }

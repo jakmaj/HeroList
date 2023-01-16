@@ -3,7 +3,6 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -14,9 +13,6 @@
                 <outlet property="avatarImageView" destination="k1N-Cq-85u" id="vSd-SX-2yt"/>
                 <outlet property="deckLabel" destination="50x-M0-Me4" id="xZR-Sq-3EI"/>
                 <outlet property="descriptionTextView" destination="AWj-bB-C6D" id="BvN-pe-nhW"/>
-                <outlet property="errorButton" destination="5DO-Q2-G3C" id="sDs-9c-z5h"/>
-                <outlet property="errorLabel" destination="XhY-iT-b5g" id="Jkm-kJ-o26"/>
-                <outlet property="errorView" destination="yhy-kE-4lJ" id="DdP-lq-uAU"/>
                 <outlet property="publisherLabel" destination="dzy-eH-rYq" id="GMc-tt-eIB"/>
                 <outlet property="realNameLabel" destination="I2M-9G-mtZ" id="lpY-ss-g4S"/>
                 <outlet property="view" destination="iN0-l3-epB" id="ule-zd-8iR"/>
@@ -96,51 +92,20 @@
                     <viewLayoutGuide key="contentLayoutGuide" id="ugK-hk-xh5"/>
                     <viewLayoutGuide key="frameLayoutGuide" id="TQv-ju-vtI"/>
                 </scrollView>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yhy-kE-4lJ" userLabel="Error View">
-                    <rect key="frame" x="8" y="380.33333333333331" width="377" height="91.333333333333314"/>
-                    <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XhY-iT-b5g">
-                            <rect key="frame" x="168" y="7.9999999999999982" width="41.333333333333343" height="20.333333333333329"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5DO-Q2-G3C">
-                            <rect key="frame" x="151" y="48.333333333333371" width="75" height="35"/>
-                            <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                        </button>
-                    </subviews>
-                    <color key="backgroundColor" name="DialogBackground"/>
-                    <constraints>
-                        <constraint firstAttribute="bottom" secondItem="5DO-Q2-G3C" secondAttribute="bottom" constant="8" id="IEa-S4-ofO"/>
-                        <constraint firstItem="XhY-iT-b5g" firstAttribute="centerX" secondItem="yhy-kE-4lJ" secondAttribute="centerX" id="SY2-JN-bk0"/>
-                        <constraint firstItem="XhY-iT-b5g" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="yhy-kE-4lJ" secondAttribute="leading" constant="8" id="XMS-9f-9Qy"/>
-                        <constraint firstItem="5DO-Q2-G3C" firstAttribute="centerX" secondItem="yhy-kE-4lJ" secondAttribute="centerX" id="aAj-pr-lar"/>
-                        <constraint firstItem="5DO-Q2-G3C" firstAttribute="top" secondItem="XhY-iT-b5g" secondAttribute="bottom" constant="20" id="cpc-GG-VqC"/>
-                        <constraint firstItem="XhY-iT-b5g" firstAttribute="top" secondItem="yhy-kE-4lJ" secondAttribute="top" constant="8" id="dj9-5q-idd"/>
-                    </constraints>
-                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="GsH-yA-aUh" secondAttribute="bottom" id="5op-vq-L2D"/>
-                <constraint firstItem="yhy-kE-4lJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="HMV-mp-dQA"/>
                 <constraint firstItem="0wj-Vb-ros" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="JfE-Zd-gKC"/>
-                <constraint firstItem="yhy-kE-4lJ" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="TIS-fn-qcN"/>
                 <constraint firstItem="GsH-yA-aUh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="dKs-Ep-O8D"/>
                 <constraint firstAttribute="trailing" secondItem="GsH-yA-aUh" secondAttribute="trailing" id="kxe-TQ-VNI"/>
-                <constraint firstAttribute="trailing" secondItem="yhy-kE-4lJ" secondAttribute="trailing" constant="8" id="wgv-Nm-eFL"/>
                 <constraint firstItem="GsH-yA-aUh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="xwi-Fe-X5l"/>
             </constraints>
             <point key="canvasLocation" x="121.37404580152672" y="20.422535211267608"/>
         </view>
     </objects>
     <resources>
-        <namedColor name="DialogBackground">
-            <color red="0.67799997329711914" green="0.68599998950958252" blue="0.68599998950958252" alpha="0.80000001192092896" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

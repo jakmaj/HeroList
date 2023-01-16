@@ -14,17 +14,12 @@ final class CharacterListVC: BaseViewController, ViewController {
 
     @IBOutlet private var tableView: UITableView!
 
-    @IBOutlet private var errorView: UIView!
-    @IBOutlet private var errorLabel: UILabel!
-    @IBOutlet private var errorButton: UIButton!
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
         title = "CharacterListVCTitle".localized
 
         setupTable()
-        setupErrorView()
         setupRx()
 
         vm.in.viewDidLoad()
@@ -47,11 +42,6 @@ final class CharacterListVC: BaseViewController, ViewController {
         tableView.tableHeaderView = UIView() // to remove first cell top separator
     }
 
-    private func setupErrorView() {
-        errorLabel.text = "CharacterListVCErrorMessage".localized
-        errorButton.setTitle("Retry".localized, for: .normal)
-    }
-
     private func setupRx() {
         vm.out.rx.reloadTable
             .do(onNext: { [weak self] in
@@ -67,19 +57,16 @@ final class CharacterListVC: BaseViewController, ViewController {
             })
             .subscribe()
             .disposed(by: disposeBag)
-
-        errorButton.rx.tap
-            .do(onNext: { [weak self] in
-                self?.vm.in.reloadData()
-            })
-            .subscribe()
-            .disposed(by: disposeBag)
     }
 
     private func updateForState(_ state: CharacterListVM.State) {
-        errorView.isHidden = state != .error
-
         state == .loading ? showLoading() : hideLoading()
+
+        if state == .error {
+            showError(message: "CharacterListVCErrorMessage".localized, dismissable: false) { [weak self] in
+                self?.vm.in.reloadData()
+            }
+        }
     }
 
 }
